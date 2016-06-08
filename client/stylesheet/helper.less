@@ -1,0 +1,73 @@
+@import 'color.less';
+#helper {   
+    background: #333333;
+    height: 60px;
+    display: none;
+// css sprite
+    .stitches-sprite(@x: 0, @y: 0, @width: 0, @height: 0) {
+        background-position: @x @y;
+        width: @width;
+        height: @height;
+    }
+
+    .sprite {
+        background-image: url(images/index/helper-icon.png);    background-repeat: no-repeat;
+        display: inline-block;
+
+        &.sprite-big {
+            .stitches-sprite(-5px, -5px, 19px, 19px);
+        }
+
+        &.sprite-black {
+            .stitches-sprite(-34px, -5px, 19px, 19px);
+        }
+
+        &.sprite-blue {
+            .stitches-sprite(-63px, -5px, 19px, 19px);
+        }
+
+        &.sprite-close {
+            .stitches-sprite(-92px, -5px, 20px, 23px);
+        }
+
+        &.sprite-none {
+            .stitches-sprite(-122px, -5px, 19px, 19px);
+        }
+
+        &.sprite-red {
+            .stitches-sprite(-151px, -5px, 19px, 19px);
+        }
+
+        &.sprite-smll {
+            .stitches-sprite(-180px, -5px, 19px, 19px);
+        }
+
+        &.sprite-three {
+            .stitches-sprite(-209px, -5px, 19px, 19px);
+        }
+
+        &.sprite-txt {
+            .stitches-sprite(-238px, -5px, 21px, 17px);
+        }
+    }
+
+    .content {
+        width: 1000px;
+        margin: 0 auto;
+        line-height: 60px;
+        color: @helper-color;
+        font-size: 16px;
+        div {
+            display: inline-block;
+        }
+    }
+    
+    .scale {
+        margin: 0 15%;
+    }
+
+    .close-helper {
+        float: right;
+    }
+
+}

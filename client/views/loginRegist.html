@@ -1,0 +1,48 @@
+<template name="loginRegist">
+	{{> helper}}	
+	{{> header}}
+	<div id="login-regist">
+
+		<div class="content">
+			<p class="title">奉贤投资</p>
+			<ul>
+				<li class="active tab">登录</li>
+				<li class="tab">注册</li>
+			</ul>
+			<div>
+			<div class="item loginitem">
+				<form action="" autocomplete="off">
+
+					<p><input type="email" name="email" id="email"  placeholder="邮箱" class="e" autocomplete="off"/></p>
+					<p><input type="password" name="password" id="password" placeholder="密码" class="e"/></p>
+					<p>
+						<input type="text" name="code" id="code" placeholder="验证码" class="e"/>
+						<input type="text" name="code2" id="code2" readonly="readonly" class="e" value={{code}} />
+					</p>
+					<p class="tips">
+					<input type="checkbox" id="remember">
+					<label for="remember">记住我</label>
+					<span class="cant">无法登录?</span>
+					</p>
+					<button class="login" type="button">登录</button>
+				</form>
+
+			</div>
+			<div class="item registitem">
+				<form action="" autocomplete="off">
+					<p><input type="email" name="email" id="email"  placeholder="邮箱" class="e" /></p>
+					<p><input type="password" name="password" id="password" placeholder="密码" class="e"/></p>
+					<p><input type="password" name="password2" id="password2" placeholder="再次输入密码" class="e"/></p>
+					<p>
+						<input type="text" name="code3" id="code3" placeholder="验证码" class="e"/>
+						<input type="text" name="code4" id="code4" readonly="readonly" class="e" value={{code}} />
+					</p>
+					<button class="regist" type="button">注册</button>
+				</form>
+			</div>
+			</div>
+		</div>
+
+	</div>
+	{{> footer}}
+</template>

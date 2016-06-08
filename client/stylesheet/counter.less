@@ -1,0 +1,164 @@
+@import 'color.less';
+
+
+
+#counter {
+	width: 960px;
+	margin: 0 auto;
+	font-size: 16px;
+	color: rgb(51, 51, 51);
+	position: relative;
+	// background-color: #fff;
+	.nav {
+		width: 100%;
+		height: 80px;
+		line-height: 80px;
+		font-family: "FZLTHJW";
+		font-size: 16px;
+	}
+	.content {
+		width: 100%;
+		height: 700px;
+		padding:30px 60px;
+		background-color: #fff;
+		text-align: center;
+		ul.task_ul{
+			list-style:none;
+			display: inline-block;
+			padding:0px 0px;
+			background:url(/images/linestraight.png) no-repeat top center;
+			background-size: 754px 10px;
+			background-position: 20px 12px;
+			img{border:0;}
+			li{
+				width:30px;
+				height:30px;
+				display: inline-block;
+				margin-right:100px;
+				position:relative;
+				display: inline-block;
+				&:last-child{
+					margin-right: 0px;
+				}
+				a{
+					text-decoration: none;
+					border:1px solid #11719c;
+					width:100%;
+					height:100%;
+					line-height:25px;
+					border-radius:50%;
+					color:@word_color;
+				    background-color:@normal_white;
+					position:absolute;
+					cursor: pointer;
+					top:0;
+					left:0;
+					&:hover{
+						// .current;
+						background-color: #11719c;
+					}
+					// -webkit-transition:-webkit-transform 0.5s ease, background-color 0.5s ease;
+					// transition:transform 0.5s ease, background-color 0.5s ease;
+				}
+				a.selected{
+					background-color: @normal_red;
+				}
+			}
+			li{
+				*display: inline;
+				*zoom:1;
+			}
+			
+		}
+		.current{
+			background-color:@normal_red;
+			-webkit-transform:scale(1.5);
+			transform:scale(1.5);
+		}
+		.intro{
+			padding-left: 60px;
+			p{
+				color: @index-blue;
+				text-align: left;
+				font-size: 18px;
+				letter-spacing: 1px;
+			}
+		}
+	.changecontent{
+		width: 100%;
+		height: 70%;
+		display: none;
+		.pic{
+			width: 100%;
+			height: 66%;
+			padding: 8px 8px;
+
+			.img{
+				display: inline-block;
+				width: 22%;
+				height: 50%;
+				background-size: cover;
+				margin: 10px 11px;
+				position: relative;
+				.shadow{
+					display: none;
+					position: absolute;
+					cursor: pointer;
+					width: 100%;
+					height: 100%;
+					background-color: rgba(0,0,0,0.3);
+					text-align: center;
+					p{
+						margin-top: 30%;
+						color: #fff;
+						font-size: 22px;
+						letter-spacing: 8px;
+						cursor: pointer;
+					}
+				}
+				&:hover{
+					.shadow{
+						display: block;
+					}
+				}
+			}
+		}
+	}
+		.form{
+			button{
+				padding: 8px 8px;
+				letter-spacing: 1px;
+				min-width: 80px;
+				margin: 0 20px;
+			}
+			.white-button{
+				display: none;
+				background-color: #dcdcdc;
+				color: @index-blue;
+			}
+			.blue-button{
+				background-color: @index-blue;
+				color: @normal_white;
+			}
+		}
+	}
+
+	.qr-code {
+		width: 145px;
+		height: 170px;
+		position: absolute;
+		right: -17%;
+		bottom: .3%;
+		background: url(images/advantages/qr-code.png);
+		border: 1px solid #8a8a8a;
+	}
+
+}
+
+.showcontent{
+	display: block !important;
+}
+
+.block{
+	display: block !important;
+}

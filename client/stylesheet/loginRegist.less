@@ -1,0 +1,106 @@
+@import 'color.less';
+
+body {
+	background: #f8f8f8;
+}
+
+#login-regist {
+	width: 1000px;
+	height: 600px;
+	background: @helper-color;
+	margin: 0 auto;
+	margin-top: 80px;
+	margin-bottom: 70px;
+	p {
+		margin: 0;
+	}
+	.title {
+		font-size: 40px;
+		color: #02bfa8;
+		letter-spacing: 7px;
+	}
+	.content {
+		width: 200px;
+		height: 100%;
+		margin: 0 auto;
+		text-align: center;
+		padding-top: 40px;
+		ul {
+			display: block;
+			text-align: center;
+			height: 40px;
+			padding: 0;
+			font-size: 24px;
+			color: #656565;
+			margin-top: 80px;
+			margin-bottom: 30px;
+			li {
+				float: left;
+				display: block;
+				width: 25%;
+				padding: 5px 0;
+				margin: 0 12%;
+				cursor: pointer;
+			}
+			.active {
+				color: #40adeb;
+				border-bottom: 3px solid #40adeb;
+			}
+		}
+		.item {
+			clear: both;
+			input:-webkit-autofill {
+			-webkit-box-shadow: 0 0 0px 1000px white inset;
+			border: 1px solid #CCC!important;
+			height: 45px; 
+			width: 100%;
+			}
+			input.e {
+				height: 45px; 
+				width: 100%;
+				font-size: 14px;
+			}
+			#code ,#code3{
+				width: 62%;
+				float: left;
+			}
+			#code2,#code4 {
+				width: 38%;
+				font-family: Arial;  
+				font-style: italic;  
+				font-weight: bold;  
+				border: 0;  
+				letter-spacing: 3px;  
+				color: blue; 
+				background: #f0f0f0;
+				text-align: center;
+			}
+			.tips {
+				height: 16px;
+				margin-top: 20px;
+				color: #7a7a7a;
+				font-size: 13px;
+				input,label {
+					float: left;
+					margin-right: 2px;
+				}
+				span {
+					float: right;
+					cursor: pointer;
+				}
+			}
+			.login,.regist {
+				clear: both;
+				width: 200px;
+  				height: 47px;
+  				background: #40adeb;
+  				font-size: 24px;
+  				color: #fff;
+  				margin-top: 25px;
+			}
+		}
+		.registitem {
+			display: none;
+		}
+	}
+}

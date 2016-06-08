@@ -1,0 +1,168 @@
+@import 'color.less';
+
+#land-detail {
+	width: 960px;
+	margin: 0 auto;
+	font-size: 16px;
+	color: rgb(51, 51, 51);
+	position: relative;
+	.nav {
+		width: 100%;
+		height: 80px;
+		line-height: 80px;
+		font-family: "FZLTHJW";
+		font-size: 16px;
+	}
+
+	.content {
+		width: 100%;
+		.info {
+			width: 100%;
+			padding-left: 20px;
+			padding-top: 15px;
+			padding-bottom: 13px;
+			background: @helper-color;
+			.text {
+				width: 62%;
+				float: right;
+				h1,p {
+					margin: 0;
+				}
+				h1 {
+					font-size: 30px;
+					color: @index-blue;
+					padding-bottom: 5px;
+				}
+				p {
+					font-size: 18px;
+					font-weight: bold;
+					padding: 14px 0;
+					width: 90%;
+					border-bottom: 2px solid #e6e6e6;
+
+				}
+				.area {
+					border: none;
+				}
+
+				button {
+					padding: 10px 40px;
+					background: red;
+					color: @helper-color;
+					margin-top: 8px;
+				}
+			}
+		}
+
+		.main {
+			margin-top: 20px;
+			.title {
+				height: 50px;
+				border-top: 5px solid @index-blue;
+				border-bottom: 2px solid #e6e6e6;
+				color: @index-blue;
+				line-height: 50px;
+				padding-left: 10px;
+				font-size: 18px;
+				background: @helper-color;
+				img {
+					vertical-align: middle;
+				}
+			}
+			.left {
+				width: 670px;
+				display: inline-block;
+				.map {
+
+				}
+
+				.slider {
+					margin-top: 20px;
+					width: 670px;
+					.pictures {
+						width: 100%;
+						height: 185px;
+						position: relative;
+						ul {
+							margin: 0; 
+							padding: 0;
+							width: 5000;
+							height: 100%;
+							overflow: hidden;
+							li {
+								float: left;
+								position:relative;
+								div {
+									font-size: 18px;
+									color: @helper-color;
+									padding: 84px 47.5px;
+									position: absolute;
+									top: 0;
+									left: 0;
+									background: rgba(0,0,0,0.5);
+									display: none;
+									cursor: pointer;
+								}
+							}
+						}
+						.arrow-left {
+							position: absolute;
+							left: 0;
+							top: 40%;
+							cursor: pointer;
+						}
+						.arrow-right {
+							position: absolute;
+							right: 3px;
+							top: 40%;
+							cursor: pointer;
+						}
+					}
+				}
+
+				
+			}
+
+			.right {
+				width: 270px;
+				float: right;
+				display: inline-block;
+				background: @helper-color;
+				.item {
+					width: 250px;
+					padding: 20px 10px;
+					margin: 0 auto;
+					border-bottom: 1px solid #f8f8f8;
+					img {
+						float: left;
+						margin-right: 15px;
+					}
+					h4 {
+						color: @index-blue;
+						margin-bottom: 14px;
+						margin-top: 0;
+					}
+					p {
+						margin-bottom: 12px;
+					}
+					button {
+						background: red;
+						padding: 5px 30px;
+						color: @helper-color;
+					}
+				}
+			}
+		}
+	}
+
+	.qr-code {
+			width: 145px;
+			height: 170px;
+			position: absolute;
+			right: -17%;
+			bottom: .3%;
+			background: url(images/advantages/qr-code.png);
+			border: 1px solid #8a8a8a;
+	}
+}
+

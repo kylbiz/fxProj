@@ -1,0 +1,604 @@
+<template name="mapTitle">
+	<div class="map-title">
+		<div class="tabs" id="plant"><a href="/indutryResource/plant" title="">厂房</a></div>
+		<div class="tabs" id="land"><a href="/indutryResource/land" title="">土地</a></div>
+		<div class="tabs" id="building"><a href="/indutryResource/building" title="">楼宇</a></div>
+		<div class="inputType">
+			<input type="text" name="">
+			<button type="" value="">搜索</button>
+		</div>
+	</div>
+</template>
+
+<template name="land">
+	{{> helper}}
+	{{> header}}
+	<div class="container">
+		<div class="nav">
+			<a href="/">首页</a>
+			&nbsp;>&nbsp;
+			<a href="#">产业资源</a>
+		</div>
+		<div class="content">
+			<div class="main-box">
+				<div class="left">
+					<div class="map">
+						{{> mapTitle}}
+						<div id="mapcontainer">
+							<div class="ul-text">
+								<ul>
+									<li>土地面积：</li>
+									<li>不限</li>
+									<li>0-1000㎡</li>
+									<li>1000-3000㎡</li>
+									<li>3000-5000㎡</li>
+									<li>5000㎡以上</li>
+								</ul>
+							</div>
+							<div class="ul-text">
+								<ul>
+									<li>土地性质：</li>
+									<li>不限</li>
+									<li>工业用地</li>
+									<li>化工用地</li>
+									<li>其他</li>
+
+								</ul>
+							</div>
+							<div class="ul-text">
+								<ul>
+									<li>所属园区：</li>
+									<li>不限</li>
+									<li>星火开发区</li>
+									<li>上海市奉贤经济开发区</li>
+									<li>上海市工业综合开发区
+										<select style="margin-left: -7px;" name="">
+											<option value="">人保局</option>
+											<option value="">人保局</option>
+											<option value="">人保局</option>
+											<option value="">人保局</option>
+											<option value="">人保局</option>
+											<option value="">人保局</option>
+											<option value="" selected="selected"></option>
+										</select></li>
+								</ul>
+							</div>
+							<div class="ul-text">
+								<ul>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="right">
+					<div class="user-title">
+						<div class="user-img">
+							<img src="/images/counter/nanqiao.jpg" alt="">
+						</div>
+						<div class="user-login">
+							<p>游客，</p>
+							<p>您好，请登录</p>
+							<a href="" title="">登录</a><span> |</span>
+							<a href="" title="">注册</a>
+						</div>
+
+					</div>
+					<div class="list">
+						<button type="">发布出售信息</button>
+						<button type="">发布求购信息</button>
+						<button type="">发布出租信息</button>
+						<button type="">发布求租信息</button>
+					</div>
+				</div>
+			</div>
+			<div class="main-box">
+				<div class="main-content">
+					<div class="control-list">
+						<button type="">默认排序</button>
+						<button type="">价格<i class="fa fa-long-arrow-down" aria-hidden="true"></i></button>
+						<button type="">面积</button>
+						<input type="text" name="">
+						<select name="" >
+							<option value="">东部</option>
+							<option value="">中部</option>
+							<option value="">西部</option>
+							<option value="">南部</option>
+							<option value="" selected="select"></option>
+							
+						</select>
+					</div>
+					<div class="content-detail">
+						<div class="detail-img">
+							<img src="/images/counter/nanqiao.jpg" alt="">
+						</div>
+						<div class="detail-text">
+							<p>地块：22-08</p>
+							<p>土地性质：工业用地  土地面积：60亩</p>
+							<p>所属园区：星火开发区</p>
+							<p>产业导向：生物医药、新材料、生产性服务业...</p>
+							
+						</div>
+						<div class="detail-cost">
+							<p><strong>1.3</strong>元/㎡/天</p>
+						</div>
+					</div>
+					<div class="content-detail">
+						<div class="detail-img">
+							<img src="/images/counter/nanqiao.jpg" alt="">
+						</div>
+						<div class="detail-text">
+							<p>地块：22-08</p>
+							<p>土地性质：工业用地  土地面积：60亩</p>
+							<p>所属园区：星火开发区</p>
+							<p>产业导向：生物医药、新材料、生产性服务业...</p>
+							
+						</div>
+						<div class="detail-cost">
+							<p><strong>1.3</strong>元/㎡/天</p>
+						</div>
+					</div>
+					<div class="content-detail">
+						<div class="detail-img">
+							<img src="/images/counter/nanqiao.jpg" alt="">
+						</div>
+						<div class="detail-text">
+							<p>地块：22-08</p>
+							<p>土地性质：工业用地  土地面积：60亩</p>
+							<p>所属园区：星火开发区</p>
+							<p>产业导向：生物医药、新材料、生产性服务业...</p>
+							
+						</div>
+						<div class="detail-cost">
+							<p><strong>1.3</strong>元/㎡/天</p>
+						</div>
+					</div>
+					<div class="content-detail">
+						<div class="detail-img">
+							<img src="/images/counter/nanqiao.jpg" alt="">
+						</div>
+						<div class="detail-text">
+							<p>地块：22-08</p>
+							<p>土地性质：工业用地  土地面积：60亩</p>
+							<p>所属园区：星火开发区</p>
+							<p>产业导向：生物医药、新材料、生产性服务业...</p>
+							
+						</div>
+						<div class="detail-cost">
+							<p><strong>1.3</strong>元/㎡/天</p>
+						</div>
+					</div>
+					<div class="content-detail">
+						<div class="detail-img">
+							<img src="/images/counter/nanqiao.jpg" alt="">
+						</div>
+						<div class="detail-text">
+							<p>地块：22-08</p>
+							<p>土地性质：工业用地  土地面积：60亩</p>
+							<p>所属园区：星火开发区</p>
+							<p>产业导向：生物医药、新材料、生产性服务业...</p>
+							
+						</div>
+						<div class="detail-cost">
+							<p><strong>1.3</strong>元/㎡/天</p>
+						</div>
+					</div>
+					<div class="jqPaginator">
+					        <!-- <p id="demo3-text">当前第页</p> -->
+			                <div id="jqPaginator" class="pagination">
+			                <a class="prev" href="javascript:void(0);" jp-role="prev" jp-data="">&lt;</a>
+			                <a href="javascript:void(0);" jp-role="page" jp-data=""></a>
+			                <a class="next" href="javascript:void(0);" jp-role="next" jp-data="">&gt;</a>
+			                </div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="qr-code">
+
+		</div>
+	</div>
+  {{> footer}}
+</template>
+
+<template name="plant">
+	{{> helper}}
+	{{> header}}
+	<div class="container">
+		<div class="nav">
+			<a href="/">首页</a>
+			&nbsp;>&nbsp;
+			<a href="#">产业资源</a>
+		</div>
+		<div class="content">
+			<div class="main-box">
+				<div class="left">
+					<div class="map">
+						{{> mapTitle}}
+						<div id="mapcontainer">
+							<div class="ul-text">
+								<ul>
+									<li>厂房面积：</li>
+									<li>不限</li>
+									<li>0-1000㎡</li>
+									<li>1000-3000㎡</li>
+									<li>3000-5000㎡</li>
+									<li>5000㎡以上</li>
+								</ul>
+							</div>
+							<div class="ul-text">
+								<ul>
+									<li>建筑结构：</li>
+									<li>不限</li>
+									<li>0-1000㎡</li>
+									<li>1000-3000㎡</li>
+									<li>3000-5000㎡</li>
+									<li>5000㎡以上</li>
+								</ul>
+							</div>
+							<div class="ul-text">
+								<ul>
+									<li>区域范围：</li>
+									<li>不限</li>
+									<li>0-1000㎡</li>
+									<li>1000-3000㎡</li>
+									<li>3000-5000㎡</li>
+									<li>5000㎡以上</li>
+								</ul>
+							</div>
+							<div class="ul-text">
+								<ul>
+									<li>建筑类型：</li>
+									<li>不限</li>
+									<li>0-1000㎡</li>
+									<li>1000-3000㎡</li>
+									<li>3000-5000㎡</li>
+									<li>5000㎡以上</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="right">
+					<div class="user-title">
+						<div class="user-img">
+							<img src="/images/counter/nanqiao.jpg" alt="">
+						</div>
+						<div class="user-login">
+							<p>游客，</p>
+							<p>您好，请登录</p>
+							<a href="" title="">登录</a><span> |</span>
+							<a href="" title="">注册</a>
+						</div>
+
+					</div>
+					<div class="list">
+						<button type="">发布出售信息</button>
+						<button type="">发布求购信息</button>
+						<button type="">发布出租信息</button>
+						<button type="">发布求租信息</button>
+					</div>
+				</div>
+			</div>
+			<div class="main-box">
+				<div class="main-content">
+					<div class="control-list">
+						<button type="">默认排序</button>
+						<button type="">价格<i class="fa fa-long-arrow-down" aria-hidden="true"></i></button>
+						<button type="">面积</button>
+						<input type="text" name="">
+						<select name="" >
+							<option value="">东部</option>
+							<option value="">中部</option>
+							<option value="">西部</option>
+							<option value="">南部</option>
+							<option value="" selected="select"></option>
+							
+						</select>
+					</div>
+					<div class="content-detail">
+						<div class="detail-img">
+							<img src="/images/counter/nanqiao.jpg" alt="">
+						</div>
+						<div class="detail-text">
+							<p>光泰路</p>
+							<p>50364㎡|彩钢|单层厂房</p>
+							<p>上海奉贤金汇</p>
+							<p>发布时间：2016-01-03</p>
+							<div>
+								<button type="">交通便利</button>
+								<button type="">买平送平</button>
+								<button type="">附送仓库</button>
+							</div>
+						</div>
+						<div class="detail-cost">
+							<p><strong>1.3</strong>元/㎡/天</p>
+						</div>
+					</div>
+					<div class="content-detail">
+						<div class="detail-img">
+							<img src="/images/counter/nanqiao.jpg" alt="">
+						</div>
+						<div class="detail-text">
+							<p>光泰路</p>
+							<p>50364㎡|彩钢|单层厂房</p>
+							<p>上海奉贤金汇</p>
+							<p>发布时间：2016-01-03</p>
+							<div>
+								<button type="">交通便利</button>
+								<button type="">买平送平</button>
+								<button type="">附送仓库</button>
+							</div>
+						</div>
+						<div class="detail-cost">
+							<p><strong>1.3</strong>元/㎡/天</p>
+						</div>
+					</div>
+					<div class="content-detail">
+						<div class="detail-img">
+							<img src="/images/counter/nanqiao.jpg" alt="">
+						</div>
+						<div class="detail-text">
+							<p>光泰路</p>
+							<p>50364㎡|彩钢|单层厂房</p>
+							<p>上海奉贤金汇</p>
+							<p>发布时间：2016-01-03</p>
+							<div>
+								<button type="">交通便利</button>
+								<button type="">买平送平</button>
+								<button type="">附送仓库</button>
+							</div>
+						</div>
+						<div class="detail-cost">
+							<p><strong>1.3</strong>元/㎡/天</p>
+						</div>
+					</div>
+					<div class="content-detail">
+						<div class="detail-img">
+							<img src="/images/counter/nanqiao.jpg" alt="">
+						</div>
+						<div class="detail-text">
+							<p>光泰路</p>
+							<p>50364㎡|彩钢|单层厂房</p>
+							<p>上海奉贤金汇</p>
+							<p>发布时间：2016-01-03</p>
+							<div>
+								<button type="">交通便利</button>
+								<button type="">买平送平</button>
+								<button type="">附送仓库</button>
+							</div>
+						</div>
+						<div class="detail-cost">
+							<p><strong>1.3</strong>元/㎡/天</p>
+						</div>
+					</div>
+					<div class="content-detail">
+						<div class="detail-img">
+							<img src="/images/counter/nanqiao.jpg" alt="">
+						</div>
+						<div class="detail-text">
+							<p>光泰路</p>
+							<p>50364㎡|彩钢|单层厂房</p>
+							<p>上海奉贤金汇</p>
+							<p>发布时间：2016-01-03</p>
+							<div>
+								<button type="">交通便利</button>
+								<button type="">买平送平</button>
+								<button type="">附送仓库</button>
+							</div>
+						</div>
+						<div class="detail-cost">
+							<p><strong>1.3</strong>元/㎡/天</p>
+						</div>
+					</div>
+					<div class="jqPaginator">
+					        <!-- <p id="demo3-text">当前第页</p> -->
+			                <div id="jqPaginator" class="pagination">
+			                <a class="prev" href="javascript:void(0);" jp-role="prev" jp-data="">&lt;</a>
+			                <a href="javascript:void(0);" jp-role="page" jp-data=""></a>
+			                <a class="next" href="javascript:void(0);" jp-role="next" jp-data="">&gt;</a>
+			                </div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="qr-code">
+
+		</div>
+	</div>
+  {{> footer}}
+</template>
+
+<template name="building">
+	{{> helper}}
+	{{> header}}
+	<div class="container">
+		<div class="nav">
+			<a href="/">首页</a>
+			&nbsp;>&nbsp;
+			<a href="#">产业资源</a>
+		</div>
+		<div class="content">
+			<div class="main-box">
+				<div class="left">
+					<div class="map">
+						{{> mapTitle}}
+						<div id="mapcontainer">
+							<div class="ul-text">
+								<ul>
+									<li>建筑面积：</li>
+									<li>不限</li>
+									<li>5000㎡</li>
+									<li>5000-10000㎡</li>
+									<li>10000-20000㎡</li>
+									<li>20000㎡以上</li>
+								</ul>
+							</div>
+							<div class="ul-text">
+								<ul>
+									<li>楼宇状态：</li>
+									<li>不限</li>
+									<li>运营</li>
+									<li>竣工验收</li>
+									<li>已竣工</li>
+								</ul>
+							</div>
+							<div class="ul-text">
+								<ul>
+									<li>产业导向：</li>
+									<li>不限</li>
+									<li>文化创意产业</li>
+									<li>现代商贸</li>
+									<li>生产性服务业</li>
+								</ul>
+							</div>
+							<div class="ul-text">
+								<ul>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="right">
+					<div class="user-title">
+						<div class="user-img">
+							<img src="/images/counter/nanqiao.jpg" alt="">
+						</div>
+						<div class="user-login">
+							<p>游客，</p>
+							<p>您好，请登录</p>
+							<a href="" title="">登录</a><span> |</span>
+							<a href="" title="">注册</a>
+						</div>
+
+					</div>
+					<div class="list">
+						<button type="">发布出售信息</button>
+						<button type="">发布求购信息</button>
+						<button type="">发布出租信息</button>
+						<button type="">发布求租信息</button>
+					</div>
+				</div>
+			</div>
+			<div class="main-box">
+				<div class="main-content">
+					<div class="control-list">
+						<button type="">默认排序</button>
+						<button type="">价格<i class="fa fa-long-arrow-down" aria-hidden="true"></i></button>
+						<button type="">面积</button>
+						<input type="text" name="">
+						<select name="" >
+							<option value="">东部</option>
+							<option value="">中部</option>
+							<option value="">西部</option>
+							<option value="">南部</option>
+							<option value="" selected="select"></option>
+							
+						</select>
+					</div>
+					<div class="content-detail">
+						<div class="detail-img">
+							<img src="/images/counter/nanqiao.jpg" alt="">
+						</div>
+						<div class="detail-text">
+							<p>供销大楼</p>
+							<p>建筑面积：8128㎡</p>
+							<p>楼宇状态：运营</p>
+							<p>产业导向：文化创意产业</p>
+						</div>
+						<div class="detail-cost">
+							<p><strong>1.3</strong>元/㎡/天</p>
+						</div>
+					</div>
+					<div class="content-detail">
+						<div class="detail-img">
+							<img src="/images/counter/nanqiao.jpg" alt="">
+						</div>
+						<div class="detail-text">
+							<p>供销大楼</p>
+							<p>建筑面积：8128㎡</p>
+							<p>楼宇状态：运营</p>
+							<p>产业导向：文化创意产业</p>
+						</div>
+						<div class="detail-cost">
+							<p><strong>1.3</strong>元/㎡/天</p>
+						</div>
+					</div>
+					<div class="content-detail">
+						<div class="detail-img">
+							<img src="/images/counter/nanqiao.jpg" alt="">
+						</div>
+						<div class="detail-text">
+							<p>供销大楼</p>
+							<p>建筑面积：8128㎡</p>
+							<p>楼宇状态：运营</p>
+							<p>产业导向：文化创意产业</p>
+						</div>
+						<div class="detail-cost">
+							<p><strong>1.3</strong>元/㎡/天</p>
+						</div>
+					</div>
+					<div class="content-detail">
+						<div class="detail-img">
+							<img src="/images/counter/nanqiao.jpg" alt="">
+						</div>
+						<div class="detail-text">
+							<p>供销大楼</p>
+							<p>建筑面积：8128㎡</p>
+							<p>楼宇状态：运营</p>
+							<p>产业导向：文化创意产业</p>
+						</div>
+						<div class="detail-cost">
+							<p><strong>1.3</strong>元/㎡/天</p>
+						</div>
+					</div>
+					<div class="content-detail">
+						<div class="detail-img">
+							<img src="/images/counter/nanqiao.jpg" alt="">
+						</div>
+						<div class="detail-text">
+							<p>供销大楼</p>
+							<p>建筑面积：8128㎡</p>
+							<p>楼宇状态：运营</p>
+							<p>产业导向：文化创意产业</p>
+						</div>
+						<div class="detail-cost">
+							<p><strong>1.3</strong>元/㎡/天</p>
+						</div>
+					</div>
+					
+					
+					<div class="jqPaginator">
+					        <!-- <p id="demo3-text">当前第页</p> -->
+			                <div id="jqPaginator" class="pagination">
+			                <a class="prev" href="javascript:void(0);" jp-role="prev" jp-data="">&lt;</a>
+			                <a href="javascript:void(0);" jp-role="page" jp-data=""></a>
+			                <a class="next" href="javascript:void(0);" jp-role="next" jp-data="">&gt;</a>
+			                </div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="qr-code">
+
+		</div>
+	</div>
+  {{> footer}}
+</template>
