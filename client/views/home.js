@@ -79,4 +79,19 @@ Template.home.events({
 		// var index = $('.tab').index(tab);
 		$(tab).removeClass('active');
 	},
+	'mouseover .b1': function (e) {
+		var tab = e.currentTarget;
+		console.log(tab);
+		// var index = $('.tab').index(tab);
+		// $(tab).removeClass('active');
+		// alert("hello");
+		$(tab).children(".case").show(300);
+	},
+	'mouseout .b1': function (e) {
+		var tab = e.currentTarget;
+		console.log(tab);
+		// var index = $('.tab').index(tab);
+		// $(tab).removeClass('active');
+		$(tab).children(".case").hide(300);
+	},
 });
