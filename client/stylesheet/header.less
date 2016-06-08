@@ -30,6 +30,7 @@ header {
 				right: 16%;
 				z-index: 100;
 				display: none;
+
 			}
 			ul {
 				clear: both;
@@ -47,9 +48,9 @@ header {
 						border-left: 1px solid #666666;
 						border-right: 1px solid #666666;
 					}
-					a {
-						padding: 4px 7px;
-					}
+					// a {
+					// 	padding: 4px 7px;
+					// }
 					
 				}
 			}
@@ -74,7 +75,7 @@ header {
 				width: 57%;
 				height: 100%;
 				float: left;
-				padding-left: 80px;	
+				padding-left: 130px;	
 				padding-top: 15px;
 				// padding-right: 7px;
 				font-size: 14px;
@@ -99,14 +100,15 @@ header {
 					cursor: pointer;
 					img {
 						margin-right: 5px;
+						vertical-align: middle;
 					}
 				}
 				.col-line {
 					width: 1px; 
 					height: 35px;
-					background: @index-blue;
+					background: @index-gray;
 					float: left;
-					margin: 0 41px;
+					margin-left: 16px;
 					// border: 1px solid @index-blue;
 				}
 				.login-regist {
@@ -129,7 +131,7 @@ header {
 								padding: 1px 16px;
 							}					
 							#regist {
-								border-right: 1px solid @helper-color;
+								border-right: 1px solid @index-gray;
 							}	
 						}
 					}
@@ -143,11 +145,8 @@ header {
 		background: rgba(255, 255, 255, 0.6);
 		color: rgb(102, 102, 102);
 		z-index: 5000;
-		.active {
-			border-bottom: 4px solid @index-blue;
-			color: @index-blue;
-		}
 		.content{
+			
 			height: 100%;
 			ul {
 				display: block;
@@ -160,20 +159,45 @@ header {
 					float: left;
 					height: 100%;
 					width: 137px;
-					padding-top: 10px;
+					padding-top: 8px;
 					text-align: center;
 					border-right: 1px solid #888f96;
 					&:first-child {
 						border-left: 1px solid #888f96;
 					}
+
+					// &:hover {
+					// 	border-bottom: 4px solid @index-blue !important;
+					// 	color: @index-blue !important;
+					// }
+					
+					a{
+						width: 100%;
+						height: 100%;
+					}
+					
+
 					p {
 						margin: 0;
 						font-size: 16px;
+						color: @index-gray;
+						// font-weight: bold;
+						font-family: "Microsoft YaHei";
 						&:last-child {
 							font-size: 12px;
-							margin-top: 5px;
+							margin-top: 0px;
+							color: #999999;
+							-webkit-transform: scale(0.7);
 						}
 					}
+
+					// span {
+					// 	font-size: 12px !important;
+					// 	margin-top: 0px;
+					// 	color: #999999;
+					// 	-webkit-transform: scale(0.7);
+					// }
+
 					ul {
 						display: none;
 						color: rgb(102, 102, 102);
@@ -181,6 +205,10 @@ header {
 						li {
 							border: none !important;
 							line-height: 35px;
+							&:hover {
+								color: @index-blue;
+								border: none !important;
+							}
 							a {
 								display: block;
 								width: 100%;
@@ -189,10 +217,19 @@ header {
 						}
 					}
 				}
+				.active {
+					border-bottom: 4px solid @index-blue !important;
+					color: @index-blue !important;
+				}
+				
 			}
+			}
+
+			
+
 		.nav2-bg {
 			width: 100%;
-			height: 35px;
+			height: 40px;
 			z-index: 1800;
 			display: none;
 			background: #fff;
@@ -200,7 +237,5 @@ header {
 		}
 
 		}
-	}
-
 	
 }
