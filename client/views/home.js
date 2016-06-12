@@ -64,34 +64,27 @@ Template.home.events({
 	'mouseover .tab': function (e) {
 		var tab = e.target;
 		var index = $('.tab').index(tab);
-		console.log(index)
 		$(tab).addClass('active').siblings().removeClass('active');
 		$('.tab-items .box-item').eq(index).show().siblings().hide();
 	},
 
 	'mouseover .box-item a > div': function (e) {
 		var tab = e.currentTarget;
-		// var index = $('.tab').index(tab);
 		$(tab).addClass('active').siblings().removeClass('active');
 	},
 	'mouseout .box-item a > div': function (e) {
 		var tab = e.currentTarget;
-		// var index = $('.tab').index(tab);
 		$(tab).removeClass('active');
 	},
 	'mouseover .b1': function (e) {
 		var tab = e.currentTarget;
-		console.log(tab);
-		// var index = $('.tab').index(tab);
-		// $(tab).removeClass('active');
-		// alert("hello");
 		$(tab).children(".case").show(300);
 	},
 	'mouseout .b1': function (e) {
 		var tab = e.currentTarget;
-		console.log(tab);
-		// var index = $('.tab').index(tab);
-		// $(tab).removeClass('active');
 		$(tab).children(".case").hide(300);
 	},
+	'click .video': function() {
+    	AntiModals.overlay('videoModal');
+  	},
 });
