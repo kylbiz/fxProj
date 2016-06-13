@@ -60,7 +60,7 @@ Template.home.onRendered(function() {
 
 		setInterval(function () {
 			console.log(1)
-			$(".news").find("ul:first").animate({
+			$(".news-slider").find("ul:first").animate({
 				marginTop: "-60px"
 			},500,function() {
 				$(this).css({marginTop: "0px"}).find("li:first").appendTo(this);
