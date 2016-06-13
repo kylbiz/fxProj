@@ -19,9 +19,10 @@
 		margin: 0;
 		font-size: 18px;
 		color: #565656;
+		background-color: #fff;
 		li {
 			float: left;
-			width: 33.3%;
+			width: 33.33333%;
 			height: 100%;
 			line-height: 50px;
 			text-align: center;
@@ -41,27 +42,35 @@
 				position: absolute;
 				text-align: center;
 				border:2px solid @index-blue;
-				padding: 13px 2px;
+				padding: 8px 2px;
 				width: 222px;
 				color: @index-blue;
 				font-weight: 600;
+				font-size: 15px;
 				// line-height: 28px;
 				p{
 					margin: 0;
 				}
 				button{
 					// margin-top: 8px;
-					background-color: @index-blue;
-					color: #fff;
+					margin-top: 2px;
+					background-color: transparent;
+					color: @index-blue;
+					border:1px solid @index-blue;
 					&:hover{
-						border:1px solid @index-blue;
-						background-color: #fff;
-						color: @index-blue;
+						border:1px solid #fff;
+						background-color:@index-blue;
+						color:  #fff;
 					}
 				}
 				&:hover{
 					background-color: @index-blue;
 					color: #fff;
+					button{
+						border:1px solid #fff;
+						background-color:@index-blue;
+						color:  #fff;
+					}
 				}
 			}
 		}
@@ -72,7 +81,7 @@
 			background-position: 240px 112px;
 			.project-box;
 			.outer-project1{
-				top:195px;
+				top:204px;
 				left: 492px;
 			}
 			.outer-project2{
@@ -122,7 +131,7 @@
 			background-position: 170px 70px;
 			.project-box;
 			.inner-project1{
-				top:154px;
+				top:160px;
 				left: 524px;
 			}
 			.inner-project2{
@@ -154,20 +163,24 @@
 				height: 100px;
 			}
 			.inner-project7{
-				top: 737px;
+				top: 735px;
 				left: 531px;
-				height: 80px;
+				height: 91px;
+				border-width: 0px;
+				border-radius: 60%;
 			}
 			.inner-project8{
 				top: 747px;
 				left: 372px;
 				width: 71px;
 				height: 51px;
+				background-color: #fff;
 			}
 			.inner-project9{
 				top: 863px;
 				left: 611px;
 				width: 60px;
+				background-color: #fff;
 			}
 			.inner-project10{
 				top:857px;
@@ -201,9 +214,95 @@
 		}
 		.suggest-project{
 			height: 1715px;
-			background: url(images/process/processbuilding.png) no-repeat;
-			background-position: 170px 70px;
+			background: url(images/process/buildings.png) no-repeat;
+			background-position: -1px 10px;
 			.project-box;
+			>div{
+				border-width: 0px;
+			}
+			.suggest-project1{
+				top:163px;
+				left: 120px;
+			}
+			.suggest-project2{
+				top: 157px;
+				left: 395px;
+			}
+			.suggest-project3{
+				top: 272px;
+				left: 395px;
+			}
+			.suggest-project4{
+				top: 382px;
+				left: 120px;
+			}
+			.suggest-project5{
+				top: 522px;
+				left: 120px;
+			}
+			.suggest-project6{
+				top: 666px;
+				left: 120px;
+				border-width: 2px !important;
+				background-color: #e7f1f5;
+			}
+			.suggest-project7{
+				top: 665px;
+				left: 396px;
+			}
+			.suggest-project8{
+				top: 527px;
+				left: 651px;
+			}
+			.suggest-project9{
+				top: 667px;
+				left: 651px;
+			}
+			.suggest-project10{
+				top:800px;
+				left:650px;
+			}
+			.suggest-project11{
+				top:868px;
+				left:120px;
+				height: 84px;
+			}
+			.suggest-project12{
+				top:962px;
+				left:395px;
+			}
+			.suggest-project13{
+				top:947px;
+				left:645px;
+				height: 80px;
+			}
+			.suggest-project14{
+				top:1105px;
+				left:650px;
+			}
+			.suggest-project15{
+				top:1268px;
+				left:652px;
+			}
+			.suggest-project16{
+				top:1165px;
+				left:120px;
+			}
+			.suggest-project17{
+				top:1464px;
+				left:493px;
+				width: 381px;
+				height: 135px;
+			}
+			.suggest-project18{
+				top:1472px;
+				left:120px;
+			}
+			.suggest-project19{
+				top:1632px;
+				left:651px;
+				height: 82px;
+			}
 		}
 	}
 	.qr-code {
