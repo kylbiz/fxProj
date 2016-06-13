@@ -39,13 +39,14 @@ Template.header.events({
 		// var li2 = e.target.parents();
 		var event = e || window.e;
 		var li = event.currentTarget;
-		$(li).addClass("active").siblings().removeClass("active");
-		$(li).find("*").css('color',"#11719c");
+		console.log(li)
+		$(li).addClass("navactive").siblings().removeClass("navactive");
+		// $(li).find("a").css('color',"#11719c");
 		// return false;
 	},
 	'click .nav1 ul li': function(e) {
 		var event = e || window.e;
 		var li = event.target.parentNode.parentNode.parentNode;
-		$(li).addClass("active").siblings().removeClass("active");
+		$(li).addClass("navactive").siblings().removeClass("navactive");
 	}
 });	
