@@ -158,6 +158,7 @@
 			// height: 750px;
 			// margin-top: 20px;
 			overflow: hidden;
+			margin-bottom: 20px;
 			.left {
 				width: 665px;
 				float: left;
@@ -226,7 +227,6 @@
 						border-bottom: 2px solid #e6e6e6;
 						color: @index-blue;
 						line-height: 40px;
-						padding-left: 10px;
 						font-size: 18px;
 						background: @helper-color;
 						.tabs{
@@ -241,20 +241,7 @@
 								.button-change;
 							}
 						}
-						.inputType{
-							float: right;
-							position: relative;
-							input{
-								border: 2px solid #e8e8e9;
-							}
-							button{
-								margin-left: -48px;
-								height: 28px;
-								font-size: 15px;
-								line-height: 10px;
-								background-color: #e8e8e9;
-							}
-						}
+						
 					}
 				}
 				.case-list {
@@ -396,9 +383,12 @@
 				border-bottom: 2px solid #e6e6e6;
 				color: @index-blue;
 				line-height: 40px;
-				padding-left: 10px;
 				font-size: 18px;
 				background: @helper-color;
+				.comparison-title{
+					padding: 1px 20px;
+					border-bottom: 1px solid @border-bottom;
+				}
 				.control-list{
 					text-align: end;
 					border-bottom: 2px solid #e6e6e6;
@@ -408,7 +398,7 @@
 						text-indent: 205px;
 						background:no-repeat;
 						background-size: cover;
-						margin-left: -30px;
+						margin-left: -36px;
 						line-height: 10px;
 						margin-right: 10px;
 						/*很关键：将默认的select选择框样式清除*/
@@ -432,8 +422,56 @@
 					}
 				}
 				.content-detail{
-					padding: 20px 20px;
+					padding: 20px 10px;
 					border-bottom:1px solid @border-bottom; 
+					ul{
+						li{
+							color: #000;
+							display: inline-block;
+							width: 23%;
+							margin-right: 5px;
+							text-align: center;
+							border:1px solid @border-bottom;
+							padding: 10px 10px;
+							img{
+								width: 168px;
+								height: 170px;
+							}
+							p{
+								margin: 0 0;
+							}
+							select{
+								width: 168px;
+								height: 30px;
+								padding: 0px 15px;
+								background:no-repeat;
+								background-size: cover;
+								line-height: 22px;
+								/*很关键：将默认的select选择框样式清除*/
+								appearance:none;
+								-moz-appearance:none;
+								-webkit-appearance:none;
+								/*在选择框的最右侧中间显示小箭头图片*/
+								background: url(/images/dev/arrow-downA.png) no-repeat scroll right center transparent;
+								/*为下拉小箭头留出一点位置，避免被文字覆盖*/
+								option{
+									&:last-child{
+										selected:true;
+										display: none;
+									}
+								}
+							}
+							/*清除ie的默认选择框样式清除，隐藏下拉箭头*/
+							select::-ms-expand { display: none; }
+							.delete{
+								padding: 16px 0px;
+								button{
+									padding: 0px 17px;
+									border:1px solid @border-bottom;
+								}
+							}
+						}
+					}
 					>div{
 						display: inline-block;
 						margin: 10px 10px;
@@ -484,46 +522,7 @@
 
 					}
 				}
-				.jqPaginator{
-					text-align: center;
-					.pagination{
-						position: relative;
-						left: 25%;
-						padding-left: 0px;
-						padding-bottom: 0px;
-						.prev{
-							border: solid 1px #c0d3e6;
-						}
-						a.disabled{
-							display: none;
-						}
-						a{
-							font-weight: 100;
-							height: 24px!important;
-						    display: block;
-						    float: left;
-						    padding: 0 10px;
-						    text-align: center;
-						    line-height: 24px;
-						    text-decoration: none;
-						    border: solid 1px #c0d3e6;
-						    color: #333;
-						    border-left-width: 0;
-						    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
-						    -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
-						    box-shadow: 0 1px 2px rgba(0,0,0,.05);
-						    &:hover{
-						    	background-color: #2EADCF;
-						    }
-						}
-						.active{
-							background-color: #6babdd;
-							color: #fff;
-							padding: 0 10px;
-							border: solid 1px #5c95c1;
-						}
-					}
-				}
+				
 			}
 		}
 
@@ -656,4 +655,58 @@
 .button-change{
 	background-color: @index-blue;
 	color:#fff;
+}
+.inputType{
+	float: right;
+	position: relative;
+	input{
+		border: 2px solid #e8e8e9;
+	}
+	button{
+		margin-left: -48px;
+		height: 28px;
+		font-size: 15px;
+		line-height: 10px;
+		background-color: #e8e8e9;
+	}
+}
+.jqPaginator{
+	text-align: center;
+	.pagination{
+		position: relative;
+		left: 25%;
+		padding-left: 0px;
+		padding-bottom: 0px;
+		.prev{
+			border: solid 1px #c0d3e6;
+		}
+		a.disabled{
+			display: none;
+		}
+		a{
+			font-weight: 100;
+			height: 24px!important;
+		    display: block;
+		    float: left;
+		    padding: 0 10px;
+		    text-align: center;
+		    line-height: 24px;
+		    text-decoration: none;
+		    border: solid 1px #c0d3e6;
+		    color: #333;
+		    border-left-width: 0;
+		    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+		    -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+		    box-shadow: 0 1px 2px rgba(0,0,0,.05);
+		    &:hover{
+		    	background-color: #2EADCF;
+		    }
+		}
+		.active{
+			background-color: #6babdd;
+			color: #fff;
+			padding: 0 10px;
+			border: solid 1px #5c95c1;
+		}
+	}
 }

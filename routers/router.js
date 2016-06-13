@@ -121,7 +121,10 @@ Router.route('/indutryResource/buildings',{
 Router.route('/indutryResource/plantDetail',{
 	name: 'plantDetail'
 })
-
+//一键对比
+Router.route('/comparison',{
+	name: 'comparison'
+})
 
 // 重点产业
 Router.route('/indutryCluster/distribution',{

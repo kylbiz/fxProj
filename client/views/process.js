@@ -15,4 +15,5 @@ Template.process.events({
 
 Template.process.onRendered({
 	// console.log($('.box div div').find(p));
+	// $('.outer-project div div')[0].addClass('pro-box-div(20px)'');
 })
