@@ -91,14 +91,6 @@ Template.home.events({
 		var tab = e.currentTarget;
 		$(tab).removeClass('active');
 	},
-	'mouseover .b1': function (e) {
-		var tab = e.currentTarget;
-		$(tab).children(".case").show(300);
-	},
-	'mouseout .b1': function (e) {
-		var tab = e.currentTarget;
-		$(tab).children(".case").hide(300);
-	},
 	'click .video': function() {
     	AntiModals.overlay('videoModal');
   	},
