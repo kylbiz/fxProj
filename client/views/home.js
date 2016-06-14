@@ -49,7 +49,7 @@ Template.home.onRendered(function() {
 
 				nav.eq(iNow).trigger('click'); //trigger自动触发事件
 
-			}, 3000);
+			}, 5000);
 
 		}
 
@@ -90,14 +90,6 @@ Template.home.events({
 	'mouseout .box-item a > div': function (e) {
 		var tab = e.currentTarget;
 		$(tab).removeClass('active');
-	},
-	'mouseover .b1': function (e) {
-		var tab = e.currentTarget;
-		$(tab).children(".case").show(300);
-	},
-	'mouseout .b1': function (e) {
-		var tab = e.currentTarget;
-		$(tab).children(".case").hide(300);
 	},
 	'click .video': function() {
     	AntiModals.overlay('videoModal');

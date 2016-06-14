@@ -10,7 +10,7 @@
 	}
 	.slider {
 		width: 960px;
-		height: 566px;
+		height: 450px;
 		margin: 0 auto;
 		position: relative;
 		overflow: hidden;
@@ -104,7 +104,8 @@
 		.item-list {
 			height: 340px;
 			position: relative;
-			background: rgba(255,255,255,0.9) ;
+			background: rgba(255,255,255,0.7) ;
+			padding-left: 4px;
 			.left {
 				.more {
 					margin-left: 115px;
@@ -129,7 +130,7 @@
 							font-weight: 600;
 						}
 						div {
-							width: 315px;
+							width: 100%;
 							height: 100%;
 							line-height: 40px;
 							text-align: left;
@@ -166,12 +167,6 @@
 							}
 						}
 
-						// .first {
-						// 	line-height: 140px;
-						// 	&:last-child {
-						// 		line-height: 160px;
-						// 	}
-						// }
 
 						.b1 {
 							padding: 0 !important;
@@ -187,10 +182,10 @@
 							line-height: 30px;
 							text-align: center;
 							color: #fff;
-							background: rgba(0,0,0,0.6);
+							background: rgba(0,0,0,0.5);
 							position: absolute;
 							bottom: 0;
-							display: none;
+							font-weight: normal;
 						}
 					}
 				}
@@ -198,7 +193,7 @@
 	
 			.right {
 				height: 340px;
-				width: 33%;
+				width: 32%;
 				position: absolute;
 				right: 0;
 				top: 0;
@@ -208,19 +203,19 @@
 					height: 100%;
 					.title {
 						float: right;
-						width: 97%;
+						width: 100%;
 						height: 60px;
 						text-align: center;
 						line-height: 60px;
 						padding-top: 10px;
 						font-size: 20px;
-						border-bottom: 2px solid @index-deepgreen;
-						// a {
-						// 	padding: 7px 10px;
-						// 	border: 1px solid;
-						// 	border-radius: 3px;
-						// 	margin-left: 35%;
-						// }
+						font-weight: bold;
+						color: @index-gray !important;
+						padding-right: 4px;
+						>div {
+							height: 100%;
+							border-bottom: 2px solid @index-gray;
+						}
 						.t2 {
 							font-size: 20px;
 						}
@@ -234,7 +229,7 @@
 						}
 						
 						div {
-							height: 40px;
+							// height: 40px;
 							line-height: 40px;
 							text-align: left;
 							// padding-left: 37px;
@@ -283,11 +278,11 @@
 			.left {	
 				.box {
 					width: 68%;
-					color: @index-blue;
+					color: @index-gray;
 					.active {
-						background: #fff;
-						color: @index-blue;
-						border-top: 2px solid #11719c;
+						background: @index-gray;
+						color: @helper-color;
+						// border-top: 2px solid @index-gray;
 						// border-left: 2px solid #11719c;
 						// border-right: 2px solid #11719c;
 					}
@@ -295,8 +290,8 @@
 						display: none;
 					}
 					.title {
-						width: 98%;
-						border-bottom: 2px solid @index-blue;
+						width: 98.5%;
+						border-bottom: 2px solid @index-gray;
 						margin: 0 ;
 						padding: 0;
 						ul {
@@ -351,11 +346,13 @@
 			.right {
 				.box {
 					.title {
-						color: @index-red;
-						border-bottom: 2px solid @index-red;
+						color: @index-gray;
+						// border-bottom: 2px solid @index-gray;
+						font-weight: bold;
+						width: 100%;
 					}
 					.box-item {
-						width: 316px;
+						width: 98.7%;
 						height: 279px;
 						border: 13px solid #fff;
 						background-position: -40px 0px;
@@ -371,10 +368,10 @@
 			.left {
 				.box {
 					width: 67%;
-					color: @index-deepgreen;
+					color: @index-gray;
 					.box-item {
 						padding-top: 10px;
-						padding-left: 26px;
+						padding-left: 14px;
 						> div {
 							width: 46%;
 							height: 95%;
@@ -389,9 +386,10 @@
 								color: #FFF;
 								background: rgba(0,0,0,0.3);
 								p {
+									font-weight: bold;
 									&:first-child {
 										margin-top: 30%;
-										font-size: 14px;
+										font-size: 16px;
 									}
 									&:last-child {
 										width: 80%;
@@ -405,7 +403,7 @@
 							background-image: url(images/index/qrjh.png);
 						}
 						.b2 {
-							margin-left: 26px;
+							margin-left: 40px;
 							background-image: url(images/index/dfmg.png);
 						}
 					}
@@ -425,8 +423,10 @@
 						
 					}
 					.title {
-								border-bottom: 2px solid @index-blue;
+								// border-bottom: 2px solid @index-gray;
 								margin-bottom: 10px !important;
+								font-weight: bold;
+								width: 100%;
 								img {
 									margin-left: 15px !important;
 								}
