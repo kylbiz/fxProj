@@ -6,7 +6,7 @@
 		
 		<div class="nav">
 			<a href="/">首页</a>
-			&nbsp;>&nbsp;
+			>
 <!-- 			<a href="#">投资指南</a>
 			&nbsp;>&nbsp; -->
 			<span class="changed">园区详情</span>
@@ -142,15 +142,7 @@
 										<li>上海市奉贤区人民政府关于进一.....</li>
 									</ul>
 							</div>
-							<div class="jqPaginator">
-							        <!-- <p id="demo3-text">当前第页</p> -->
-					                <div id="jqPaginator" class="pagination">
-					                <a class="prev" href="javascript:void(0);" jp-role="prev" jp-data="">&lt;</a>
-					                <a href="javascript:void(0);" jp-role="page" jp-data=""></a>
-					                <a class="next" href="javascript:void(0);" jp-role="next" jp-data="">&gt;</a>
-					                </div>
-							</div>
-
+							{{> jqPaginator}}
 						</div>
 					</div>
 				</div>		
@@ -175,4 +167,22 @@
 
 {{> footer}}
 
+</template>
+
+
+<template name="jqPaginator">
+	<div class="jqPaginator">
+        <!-- <p id="demo3-text">当前第页</p> -->
+        <div id="jqPaginator" class="pagination">
+        	<a class="first" href="javascript:void(0);">
+        	<i class="fa fa-angle-double-left" aria-hidden="true"></i>
+        	</a>
+            <a class="prev" href="javascript:void(0);"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+            <a href="javascript:void(0);" jp-role="page"></a>
+            <a class="next" href="javascript:void(0);" ><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+            <a class="last" href="javascript:void(0);">
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            </a>
+        </div>
+	</div>
 </template>

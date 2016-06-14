@@ -1,27 +1,41 @@
 Template.concessions.onRendered(function () {
+	// $("#jqPaginator").jqPaginator({
+	//             totalPages: 15,
+	//             visiblePages: 10,
+	//             currentPage: 1,
+	//             first: '<a href="javascript:void(0);" class="first"> <i class="fa fa-angle-double-left" aria-hidden="true"><\/i><\/a>',
+	//             prev: '<a class="prev" href="javascript:void(0);">&lt;<\/a>',
+	//             next: '<a class="next" href="javascript:void(0);">&gt;<\/a>',
+	//             page: '<a href="javascript:void(0);">{{page}}<\/a>',
+	//             last: '<a href="javascript:void(0);" class="last"><i class="fa fa-angle-double-right" aria-hidden="true"><\/i><\/a>',
+	//             onPageChange: function (n) {
+	               
+	//             }
+	// });
+})
+Template.concessions.events({
+	'click .ul-text ul li': function (event) {
+		// ...
+		$(event.target).toggleClass('normal-red');
+
+	}
+});
+
+
+
+Template.jqPaginator.onRendered(function () {
 	$("#jqPaginator").jqPaginator({
-	            totalPages: 100,
+	            totalPages: 15,
 	            visiblePages: 10,
 	            currentPage: 1,
-	            prev: '<a class="prev" href="javascript:void(0);">&lt;<\/a>',
-	            next: '<a class="next" href="javascript:void(0);">&gt;<\/a>',
+	            first: '<a href="javascript:void(0);" class="first"><i class="fa fa-angle-double-left" aria-hidden="true"><\/i><\/a>',
+	            prev: '<a class="prev" href="javascript:void(0);"><i class="fa fa-angle-left" aria-hidden="true"></i><\/a>',
+	            next: '<a class="next" href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i><\/a>',
 	            page: '<a href="javascript:void(0);">{{page}}<\/a>',
+	            last: '<a href="javascript:void(0);" class="last"><i class="fa fa-angle-double-right" aria-hidden="true"><\/i><\/a>',
 	            onPageChange: function (n) {
 	               
 	            }
 	});
-})
+});
 
-Template.successCases.onRendered(function () {
-	$("#demo3").jqPaginator({
-	            totalPages: 100,
-	            visiblePages: 10,
-	            currentPage: 1,
-	            prev: '<a class="prev" href="javascript:void(0);">&lt;<\/a>',
-	            next: '<a class="next" href="javascript:void(0);">&gt;<\/a>',
-	            page: '<a href="javascript:void(0);">{{page}}<\/a>',
-	            onPageChange: function (n) {
-	                $("#demo3-text").html("当前第" + n + "页");
-	            }
-	});
-})

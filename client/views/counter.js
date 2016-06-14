@@ -1,6 +1,6 @@
 Template.counter.helpers({
 	isSelect: function (stepName) {
-		return (Session.get('stepName') == stepName);
+		Session.set('stepName', );
 	}
 })
 
@@ -13,11 +13,11 @@ Template.counter.events({
 	  $('.changecontent').eq(index).addClass('showcontent').siblings().removeClass('showcontent');
 	},
 	'click #next': function (event) {
-		KEPUtil.alertMsg('asdasd!', 1);
+		Session.set('stepName', $('.showcontent').attr('value'));
 	},
 	'click .shadow': function (event) {
 		var target = event.currentTarget;
-		console.log(target);
+		// console.log(target);
 		$(target).toggleClass('block');
 	}
 })

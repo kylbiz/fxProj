@@ -90,7 +90,6 @@ Router.route('/investGuide/successCases',{
 
 
 //产业资源
-
 Router.route('/indutryResource/plant',{
 	name: 'plant'
 })

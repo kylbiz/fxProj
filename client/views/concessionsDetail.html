@@ -4,7 +4,7 @@
 	<div class="container">
 		<div class="nav">
 			<a href="/">首页</a>
-			&nbsp;>&nbsp;
+			>
 			<span class="changed">政策详情</span>
 		</div>
 		<div class="content">
@@ -20,21 +20,8 @@
 			 	<div class="share-content">
 		    		<h1>奉贤区金融服务业财政扶持办法(试行)</h1>
 		    		<h3>(2013年8月发布)</h3>
-		    		<!-- JiaThis Button BEGIN -->
-		    		<!-- JiaThis Button BEGIN -->
-		    		<div class="jiathis_style">
-		    			<span class="jiathis_txt">分享到：</span>
-		    			<a class="jiathis_button_weixin"></a>
-		    			<a class="jiathis_button_tsina"></a>
-		    			<a class="jiathis_button_cqq"></a>
-		    			<!-- <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a> -->
-		    			<!-- <a class="jiathis_counter_style"></a> -->
-		    		</div>
-		    		<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
-		    		<!-- JiaThis Button END -->
-		    		<!-- JiaThis Button END -->
+		    		{{> jiathis }}
 			 	</div>
-
 			 	<div class="content-text">
 			 		<p>
 			 			<strong>第一条</strong>  为充分发挥金融在奉贤区“创新驱动、转型发展”和“三化两建设”中的引领带动作用，营造良好的区域金融环境，服务上海国际金融中心建设，根据《关于加强金融服务促进本市经济转型和结构调整的若干意见》（沪府办发〔2010〕32号）文件精神，结合我区实际，制定本办法。
@@ -83,4 +70,21 @@
 
 	{{> footer}}
 
+</template>
+
+
+<template name="jiathis">
+	<!-- JiaThis Button BEGIN -->
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">分享到：</span>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<!-- <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a> -->
+		<!-- <a class="jiathis_counter_style"></a> -->
+	</div>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+	<!-- JiaThis Button END -->
 </template>
