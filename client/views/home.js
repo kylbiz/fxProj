@@ -49,7 +49,7 @@ Template.home.onRendered(function() {
 
 				nav.eq(iNow).trigger('click'); //trigger自动触发事件
 
-			}, 3000);
+			}, 5000);
 
 		}
 

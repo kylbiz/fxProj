@@ -7,7 +7,7 @@ body {
 #login-regist {
 	width: 1000px;
 	height: 600px;
-	background: @helper-color;
+	background: url(images/login-bg.png);
 	margin: 0 auto;
 	margin-top: 80px;
 	margin-bottom: 70px;
@@ -20,31 +20,38 @@ body {
 		letter-spacing: 7px;
 	}
 	.content {
-		width: 200px;
+		width: 300px;
 		height: 100%;
 		margin: 0 auto;
 		text-align: center;
-		padding-top: 40px;
+		padding-top: 75px;
 		ul {
 			display: block;
 			text-align: center;
 			height: 40px;
 			padding: 0;
-			font-size: 24px;
+			font-size: 16px;
 			color: #656565;
-			margin-top: 80px;
-			margin-bottom: 30px;
+			margin-top: 35px;
+			background: rgba(255, 255, 255, 0.3);
+			// margin-bottom: 30px;
 			li {
 				float: left;
 				display: block;
-				width: 25%;
-				padding: 5px 0;
-				margin: 0 12%;
+				width: 50%;
+				height: 100%;
+				line-height: 40px;
+				// padding: 5px 0;
 				cursor: pointer;
+				letter-spacing: 1px;
+				img {
+					vertical-align: middle;
+					margin-right: 10px;
+				}
 			}
 			.active {
-				color: #40adeb;
-				border-bottom: 3px solid #40adeb;
+				color: @helper-color;
+				background: @index-blue;
 			}
 		}
 		.item {
