@@ -15,8 +15,10 @@
 			<div class="main-box">
 				<div class="left">
 					<div class="map">
-						<div class="title">
-							<img src="/images/concession/logo.png" alt="">
+						<div class="top-title">
+							<!-- <img src="/images/concession/logo.png" alt=""> -->
+							<span></span>
+							<span>政策搜索</span>
 							<div class="inputType">
 								<input type="text" name="">
 								<button type="" value="">搜索</button>
@@ -26,82 +28,88 @@
 							<div class="ul-text">
 								<ul>
 									<li>政策级别：</li>
-									<li>不限</li>
-									<li>奉贤区</li>
-									<li>上海市</li>
-									<li>国家</li>
+									<li><input type="checkbox" name="" value="不限">不限</li>
+									<li><input type="checkbox" name="" value="不限">奉贤区</li>
+									<li><input type="checkbox" name="" value="不限">上海市</li>
+									<li><input type="checkbox" name="" value="不限">国家</li>
 								</ul>
 							</div>
 							<div class="ul-text">
 								<ul>
 									<li>政策类别：</li>
-									<li>不限</li>
-									<li>科技创新</li>
-									<li>人才激励</li>
-									<li>财政服务</li>
-									<li>技术改造</li>
-									<li>金融服务</li>
+									<li><input type="checkbox" name="" value="不限">不限</li>
+									<li><input type="checkbox" name="" value="不限">科技创新</li>
+									<li><input type="checkbox" name="" value="不限">人才激励</li>
+									<li><input type="checkbox" name="" value="不限">财政服务</li>
+									<li><input type="checkbox" name="" value="不限">技术改造</li>
+									<li><input type="checkbox" name="" value="不限">金融服务</li>
 								</ul>
 							</div>
 							<div class="ul-text">
 								<ul>
 									<li>发布部门：</li>
-									<li>不限</li>
-									<li>科委</li>
-									<li>经委</li>
-									<li>信息委</li>
-									<li>财政局</li>
-									<li>组织部</li>
-									<li>人保局</li>
-									<li>
-										<select name="">
-											<option value="">人保局</option>
-											<option value="">人保局</option>
-											<option value="">人保局</option>
-											<option value="">人保局</option>
-											<option value="">人保局</option>
-											<option value="">人保局</option>
-											<option value="" selected="selected"></option>
-										</select>
-									</li>
+									<li><input type="checkbox" name="" value="不限">不限</li>
+									<li><input type="checkbox" name="" value="不限">科委</li>
+									<li><input type="checkbox" name="" value="不限">经委</li>
+									<li><input type="checkbox" name="" value="不限">信息委</li>
+									<li><input type="checkbox" name="" value="不限">财政局</li>
+									<li><input type="checkbox" name="" value="不限">组织部</li>
+									<li><input type="checkbox" name="" value="不限">人保局</li>
+									<span id="upSpan1"></span>
+								</ul>
+							</div>
+							<div class="ul-text" id="showUltext1">
+								<ul>
+									<li></li>
+									<li></li>
+									<li style="margin-left: 39px;"><input type="checkbox" name="" value="不限">发改委</li>
+									<li><input type="checkbox" name="" value="不限">住建局</li>
+									<li><input type="checkbox" name="" value="不限">经信委</li>
+									<li><input type="checkbox" name="" value="不限">商务委</li>
+									<li><input type="checkbox" name="" value="不限">国资委</li>
+									<li><input type="checkbox" name="" value="不限">其他</li>
 								</ul>
 							</div>
 							<div class="ul-text">
 								<ul>
 									<li>行业类别：</li>
-									<li>不限</li>
-									<li>新能源</li>
-									<li>新材料</li>
-									<li>生物医药</li>
-									<li>智能电网</li>
-									<li>先进装备</li>
-									<li>
-										<select name="">
-											<option value="">人保局</option>
-											<option value="">人保局</option>
-											<option value="">人保局</option>
-											<option value="">人保局</option>
-											<option value="">人保局</option>
-											<option value="" selected="selected"></option>
-										</select>
-									</li>
+									<li><input type="checkbox" name="" value="不限">不限</li>
+									<li><input type="checkbox" name="" value="不限">新能源</li>
+									<li><input type="checkbox" name="" value="不限">新材料</li>
+									<li><input type="checkbox" name="" value="不限">生物医药</li>
+									<li><input type="checkbox" name="" value="不限">智能电网</li>
+									<li><input type="checkbox" name="" value="不限">先进装备业</li>
+									<span id="upSpan2"></span>
+								</ul>
+							</div>
+							<div class="ul-text" id="showUltext2">
+								<ul>
+									<li></li>
+									<li></li>
+									<li style="margin-left: 59px;"><input type="checkbox" name="" value="不限">现代商贸服务业</li>
+									<li><input type="checkbox" name="" value="不限">平台与电子商务业</li>
+									<li><input type="checkbox" name="" value="不限">文创旅游业</li>
+									<li><input type="checkbox" name="" value="不限">金融服务业</li>
+									<li style="margin-left: 112px;margin-top: 20px;"><input type="checkbox" name="" value="不限">生产性服务业</li>
+									<li><input type="checkbox" name="" value="不限">其他</li>
 								</ul>
 							</div>
 							<div class="ul-text">
 								<ul>
 									<li>重点政策：</li>
-									<li>不限</li>
-									<li>创业扶持</li>
-									<li>千人计划</li>
-									<li>中小企业培育</li>
+									<li><input type="checkbox" name="" value="不限">不限</li>
+									<li><input type="checkbox" name="" value="不限">创业扶持</li>
+									<li><input type="checkbox" name="" value="不限">千人计划</li>
+									<li><input type="checkbox" name="" value="不限">中小企业培育</li>
 								</ul>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="right">
-					<div class="title">
-						<img src="../images/dev/concessions.png" alt="">
+					<div class="top-title">
+						<span></span>
+						<span>最新政策</span>
 					</div>
 					<div class="list">
 						<ul>
@@ -147,13 +155,17 @@
 					</div>
 				</div>		
 				<div class="right">
-					<div class="title">
-						<img src="../images/dev/steps.png" alt="">
+					<div class="invest-title">
+						<span></span>
+						<span>投资流程</span>
 					</div>
 					<div class="list">
-						<div class="item"><a href="">内资企业登记流程</a></div>
-						<div class="item"><a href="">外资企业登记流程</a></div>
-						<div class="item"><a href="">建筑工程项目审批流程</a></div>
+						<div class="item-box">
+							<div class="item"><a href="">内资企业登记流程</a></div>
+							<div class="item"><a href="">外资企业登记流程</a></div>
+							<div class="item"><a href="">建筑工程项目审批流程</a></div>
+							<div class="item"><a href="">企业办事大厅入口</a></div>
+						</div>
 					</div>
 				</div>		
 			</div>

@@ -1,15 +1,3 @@
-<template name="mapTitle">
-	<div class="map-title">
-		<a href="/indutryResource/plant" class="tabs" id="plant" value="plant">厂房</a>
-		<a href="/indutryResource/land" class="tabs" id="land" value="land">土地</a>
-		<a href="/indutryResource/building" class="tabs" id="building" value="building">楼宇</a>
-		<div class="inputType">
-			<input type="text" name="">
-			<button type="" value="">搜索</button>
-		</div>
-	</div>
-</template>
-
 <template name="land">
 	{{> helper}}
 	{{> header}}
@@ -68,18 +56,7 @@
 					</div>
 				</div>
 				<div class="right">
-					<div class="user-title">
-						<div class="user-img">
-							<img src="/images/counter/nanqiao.jpg" alt="">
-						</div>
-						<div class="user-login">
-							<p>游客，</p>
-							<p>您好，请登录</p>
-							<a href="" title="">登录</a><span> |</span>
-							<a href="" title="">注册</a>
-						</div>
-
-					</div>
+					{{>userTitle}}
 					<div class="list">
 						<button type="">发布出售信息</button>
 						<button type="">发布求购信息</button>
@@ -90,20 +67,7 @@
 			</div>
 			<div class="main-box">
 				<div class="main-content">
-					<div class="control-list">
-						<button type="">默认排序</button>
-						<button type="">价格<i class="fa fa-long-arrow-down" aria-hidden="true"></i></button>
-						<button type="">面积<i class="fa fa-long-arrow-down" aria-hidden="true"></i></button>
-						<input type="text" name="">
-						<select name="" >
-							<option value="">东部</option>
-							<option value="">中部</option>
-							<option value="">西部</option>
-							<option value="">南部</option>
-							<option value="" selected="select"></option>
-							
-						</select>
-					</div>
+					{{>controlList}}
 					<div class="content-detail">
 						<div class="detail-img">
 							<img src="/images/counter/nanqiao.jpg" alt="">
@@ -251,18 +215,7 @@
 					</div>
 				</div>
 				<div class="right">
-					<div class="user-title">
-						<div class="user-img">
-							<img src="/images/counter/nanqiao.jpg" alt="">
-						</div>
-						<div class="user-login">
-							<p>游客，</p>
-							<p>您好，请登录</p>
-							<a href="" title="">登录</a><span> |</span>
-							<a href="" title="">注册</a>
-						</div>
-
-					</div>
+					{{>userTitle}}
 					<div class="list">
 						<button type="">发布出售信息</button>
 						<button type="">发布求购信息</button>
@@ -273,20 +226,7 @@
 			</div>
 			<div class="main-box">
 				<div class="main-content">
-					<div class="control-list">
-						<button type="">默认排序</button>
-						<button type="">价格<i class="fa fa-long-arrow-down" aria-hidden="true"></i></button>
-						<button type="">面积<i class="fa fa-long-arrow-down" aria-hidden="true"></i></button>
-						<input type="text" name="">
-						<select name="" >
-							<option value="">东部</option>
-							<option value="">中部</option>
-							<option value="">西部</option>
-							<option value="">南部</option>
-							<option value="" selected="select"></option>
-							
-						</select>
-					</div>
+					{{> controlList}}
 					<div class="content-detail">
 						<div class="detail-img">
 							<img src="/images/counter/nanqiao.jpg" alt="">
@@ -452,18 +392,7 @@
 					</div>
 				</div>
 				<div class="right">
-					<div class="user-title">
-						<div class="user-img">
-							<img src="/images/counter/nanqiao.jpg" alt="">
-						</div>
-						<div class="user-login">
-							<p>游客，</p>
-							<p>您好，请登录</p>
-							<a href="" title="">登录</a><span> |</span>
-							<a href="" title="">注册</a>
-						</div>
-
-					</div>
+					{{>userTitle}}
 					<div class="list">
 						<button type="">发布出售信息</button>
 						<button type="">发布求购信息</button>
@@ -474,20 +403,7 @@
 			</div>
 			<div class="main-box">
 				<div class="main-content">
-					<div class="control-list">
-						<button type="">默认排序</button>
-						<button type="">价格<i class="fa fa-long-arrow-down" aria-hidden="true"></i></button>
-						<button type="">面积<i class="fa fa-long-arrow-down" aria-hidden="true"></i></button>
-						<input type="text" name="">
-						<select name="" >
-							<option value="">东部</option>
-							<option value="">中部</option>
-							<option value="">西部</option>
-							<option value="">南部</option>
-							<option value="" selected="select"></option>
-							
-						</select>
-					</div>
+					{{> controlList}}
 					<div class="content-detail">
 						<div class="detail-img">
 							<img src="/images/counter/nanqiao.jpg" alt="">
@@ -569,4 +485,47 @@
 		</div>
 	</div>
   {{> footer}}
+</template>
+
+<!-- //登录模块 -->
+<template name="userTitle">
+	<div class="user-title">
+		<div class="user-img">
+		</div>
+		<div class="user-login">
+			<p>游客，</p>
+			<p>您好，请登录</p>
+			<a href="" title="">登录</a><span> |</span>
+			<a href="" title="">注册</a>
+		</div>
+	</div>
+</template>
+
+<template name="controlList">
+	<div class="control-list">
+		<button type="">默认排序</button>
+		<button type="">价格<i class="fa fa-long-arrow-down" aria-hidden="true"></i></button>
+		<button type="">面积<i class="fa fa-long-arrow-down" aria-hidden="true"></i></button>
+		<input type="text" name="" placeholder="产业分布">
+		<select name="" >
+			<option value="">东部</option>
+			<option value="">中部</option>
+			<option value="">西部</option>
+			<option value="">南部</option>
+			<option value="" selected="select"></option>
+			
+		</select>
+	</div>
+</template>
+
+<template name="mapTitle">
+	<div class="map-title">
+		<a href="/indutryResource/plant" class="tabs" id="plant" value="plant">厂房</a>
+		<a href="/indutryResource/land" class="tabs" id="land" value="land">土地</a>
+		<a href="/indutryResource/building" class="tabs" id="building" value="building">楼宇</a>
+		<div class="inputType">
+			<input type="text" name="">
+			<button type="" value="">搜索</button>
+		</div>
+	</div>
 </template>
