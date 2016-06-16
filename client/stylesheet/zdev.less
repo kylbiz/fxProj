@@ -2,6 +2,16 @@
 
 
 #zdev {
+
+
+	//动画
+	// @keyframes bigger {
+	//   0% { transform:scale(1) }
+	//   50% { transform:scale(1.2) }
+	//   100% { transform: scale(1) }
+	// }
+
+	
 	width: 960px;
 	margin: 0 auto;
 	font-size: 16px;
@@ -26,7 +36,6 @@
 		background: @helper-color;
 		color: #207aa1;
 		font-weight: bold;
-		//四个小三角型
 
 		.big-right {
 			width: 0;
@@ -99,7 +108,7 @@
 			button {
 				width: 25px;
 				height: 25px;
-				line-height: 25px;
+				line-height: 23px;
 				padding: 0;
 				background: @index-blue;
 				font-size: 12px;
@@ -107,7 +116,45 @@
 				border: 2px solid @helper-color;
 				border-radius: 50%;		
 				box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.3);
+				// animation: 1.5s bigger ease backwards infinite;
 			}
+			img {
+				display: none;
+			}
+			.img1 {
+				position: absolute;
+				left: 19.8%;
+				top: 12%;
+			}
+			.img2 {
+				position: absolute;
+				left: 25.6%;
+				top: 14%;
+			}
+			.img3 {
+				position: absolute;
+				right: 4.8%;
+				top: 42.5%;
+			}
+
+			.img4 {
+				position: absolute;
+				left: 39.7%;
+				bottom: 14%;
+			}
+			.img5 {
+				position: absolute;
+				right: 6.8%;
+				bottom: 29%;
+			}
+			.img6 {
+				position: absolute;
+				left: 47.8%;
+				bottom: 20%;
+			}
+
+
+
 			.btn1 {
 				position: absolute;
 				top: 20%;
@@ -125,17 +172,17 @@
 			}
 			.btn4 {
 				position: absolute;
-				bottom: 14%;
-				right: 59%;
+				bottom: 10%;
+				right: 57%;
 			}
 			.btn5 {
 				position: absolute;
-				bottom: 29%;
+				bottom: 25%;
 				right: 7%;
 			}
 			.btn6 {
 				position: absolute;
-				bottom: 20%;
+				bottom: 16%;
 				right: 49%;
 			}
 
@@ -143,6 +190,7 @@
 				font-size: 16px;
 				color: #f2dbb3;
 				cursor: pointer;
+				// animation: 1.5s bigger ease backwards infinite;
 			}
 			.span1 {
 				position: absolute;
@@ -152,7 +200,7 @@
 			.span2 {
 				position: absolute;
 				top: 35%;
-				right: 10%;
+				right: 5%;
 			}
 			.span3 {
 				position: absolute;
@@ -162,17 +210,17 @@
 			.span4 {
 				position: absolute;
 				bottom: 18%;
-				left: 30%;
+				left: 26%;
 			}
 			.span5 {
 				position: absolute;
 				top: 15%;
-				left: 35%;
+				left: 45%;
 			}
 			.span6 {
 				position: absolute;
-				bottom: 30%;
-				left: 50%;
+				bottom: 20%;
+				left: 57%;
 			}
 			.span7 {
 				position: absolute;
@@ -231,25 +279,26 @@
 				.item2 {
 					position: absolute;
 					left: -2%;
+					top: 2%;
 				}
 				.item3 {
 					position: absolute;
-					top: 27%;
+					top: 29%;
 					right: 9%;
 				}
 				.item4 {
 					position: absolute;
 					bottom: -13%;
-					left: 10.5%;
+					left: 12.5%;
 				}
 				.item5 {
 					position: absolute;
-					top: 42.6%;
+					top: 49.6%;
 					right: 11%;
 				}
 				.item6 {
 					position: absolute;
-					bottom: -7.5%;
+					bottom: -6.5%;
 					left: 21%;
 				}
 			}
@@ -263,7 +312,7 @@
 					display: none;
 					z-index: 1000;
 					.info {
-						height: 500px;
+						height: 540px;
 						background: #706d68;
 						position: relative;
 						width: 430px;
@@ -355,7 +404,7 @@
 				
 				.item2 {
 					position: absolute;
-					right: 19%;
+					right: 13%;
 					top: -6%;
 				}
 
@@ -366,19 +415,19 @@
 				}
 				.item4 {
 					position: absolute;
-					left: 35%;
+					left: 31%;
 					top: 37%;
 				}
 				.item5 {
 					height: 505px;
 					position: absolute;
-					left: 8%;
+					left: 18%;
 					top: 26%;
 				}
 				.item6 {
 					position: absolute;
-					left: -7%;
-					top: 25%;
+					left: -2%;
+					top: 35%;
 				}
 				.item7 {
 					position: absolute;
@@ -409,7 +458,7 @@
 			}
 		}
 		.devarea {
-			width: 222px;
+			width: 225px;
 			position: absolute;
 			right: 5%;
 			bottom: 5%;
@@ -419,12 +468,11 @@
 		}
 	}
 	.qr-code {
-		width: 145px;
-		height: 170px;
+		width: 160px;
+		height: 193px;
 		position: absolute;
 		right: -17%;
 		bottom: .3%;
 		background: url(images/advantages/qr-code.png);
-		border: 1px solid #8a8a8a;
 	}
 }

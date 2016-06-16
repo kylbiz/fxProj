@@ -83,14 +83,32 @@ Template.home.events({
 		$('.tab-items .box-item').eq(index).show().siblings().hide();
 	},
 
-	'mouseover .box-item a > div': function (e) {
+	'mouseover .zd a > div': function (e) {
 		var tab = e.currentTarget;
-		$(tab).addClass('active').siblings().removeClass('active');
+		var newUrl = ($(tab).find("span").attr("src"));
+		$(tab).addClass('activezd').siblings().removeClass('activezd');
+		$(tab).find('img').attr('src',newUrl);
 	},
-	'mouseout .box-item a > div': function (e) {
+	'mouseout .zd a > div': function (e) {
 		var tab = e.currentTarget;
-		$(tab).removeClass('active');
+		var oldUrl = ($(tab).find("span").attr("oldsrc"));
+		$(tab).removeClass('activezd');
+		$(tab).find('img').attr('src',oldUrl);
 	},
+
+	'mouseover .xx a > div': function (e) {
+		var tab = e.currentTarget;
+		var newUrl = ($(tab).find("span").attr("src"));
+		$(tab).addClass('activexx').siblings().removeClass('activexx');
+		$(tab).find('img').attr('src',newUrl);
+	},
+	'mouseout .xx a > div': function (e) {
+		var tab = e.currentTarget;
+		var oldUrl = ($(tab).find("span").attr("oldsrc"));
+		$(tab).removeClass('activexx');
+		$(tab).find('img').attr('src',oldUrl);
+	},
+
 	'click .video': function() {
     	AntiModals.overlay('videoModal');
   	},

@@ -20,6 +20,7 @@ Template.loginRegist.events({
 	'click .tab': function (e) {
 		var tab = e.target;
 		var index = $('.tab').index(tab);
+		console.log($(tab).siblings());
 		$(tab).addClass('active').siblings().removeClass('active');
 		$('.item').eq(index).show().siblings().hide();
 	},
