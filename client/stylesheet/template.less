@@ -649,11 +649,14 @@
 							margin: 0;
 							margin-top: 8px;
 						}
-						.download {
-							background: red;
-							padding: 5px 25px;
-							color: @helper-color;
+						button{
+							.normalBtn;
 						}
+						// .download {
+						// 	background: red;
+						// 	padding: 5px 25px;
+						// 	color: @helper-color;
+						// }
 						span {
 							margin: 7px 0;
 							// margin-bottom: 20px;
@@ -844,4 +847,19 @@
 			background: url('/images/supportCo.png') !important;
 		}
 	}
+}
+
+.normalBtn{
+	border:1px solid @index-blue;
+	color:@index-blue;
+	background-color: #fff;
+	padding: 5px 30px;
+	&:hover{
+		.clickBtn;
+	}
+}
+
+.clickBtn{
+	background-color: @index-blue;
+	color: @helper-color; 
 }

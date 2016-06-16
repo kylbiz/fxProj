@@ -9,6 +9,18 @@
 // 		$('.main-box .box').eq(index).addClass('show').siblings().removeClass('show');
 // 	},
 
+// <<<<<<< HEAD
+// // 	'click .transport li': function (e) {
+// // 		//四个标签切换
+// // 		var target = e.target ;
+// // 		console.log(target)
+// // 		var index = $(" .transport li").index(target);
+// // 		$(target).addClass('map-active').siblings().removeClass('map-active');
+// // 		$('.map-info div').eq(index).addClass('show').siblings().removeClass('show');
+// // 	}	
+
+// // });
+// =======
 // 	'click .transport li': function (e) {
 // 		//四个标签切换
 // 		var target = e.target ;
@@ -17,5 +29,5 @@
 // 		$(target).addClass('map-active').siblings().removeClass('map-active');
 // 		$('.map-info div').eq(index).addClass('show').siblings().removeClass('show');
 // 	}	
-
 // });
+// >>>>>>> 235b0728c49c7f4ca7cbcf9f509a0e2963667835
