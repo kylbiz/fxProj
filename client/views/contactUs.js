@@ -17,5 +17,4 @@ Template.contactUs.events({
 		$(target).addClass('map-active').siblings().removeClass('map-active');
 		$('.map-info div').eq(index).addClass('show').siblings().removeClass('show');
 	}	
-
 });
