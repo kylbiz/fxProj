@@ -41,8 +41,20 @@ Router.route('/select/focus', {
 	name: 'focus'
 })
 
-Router.route('/contactus',{
-	name: 'contactUs'
+// Router.route('/contactus',{
+// 	name: 'contactUs'
+// })
+Router.route('/contactus/aboutus',{
+	name: 'aboutus'
+})
+Router.route('/contactus/advice',{
+	name: 'advice'
+})
+Router.route('/contactus/contact',{
+	name: 'contact'
+})
+Router.route('/contactus/map',{
+	name: 'map'
 })
 
 //投资流程
