@@ -591,10 +591,13 @@
 				border: 1px solid #e6e6e6;
 				background: @helper-color;
 				.news-list {
-					padding: 8px 23px;
+					padding: 0px 23px;
 					.new {
 						padding-bottom: 25px;
 						border-bottom: 2px solid #e6e6e6;
+						&:last-child{
+							border-bottom-width: 0;
+						}
 						img {
 							width: 100px;
 							height: 100px;
@@ -604,6 +607,9 @@
 						h3 {
 							color: @index-blue;
 							font-weight: lighter;
+						}
+						p{
+							font-size: 14px;
 						}
 					}
 				}
@@ -630,7 +636,7 @@
 				}
 				.doc-list {
 					padding: 8px 23px;
-					padding-bottom: 108px;
+					padding-bottom: 57px;
 					.new {
 						height: 115px;
 						// padding-bottom: 25px;
@@ -848,6 +854,44 @@
 		}
 	}
 }
+
+.lastest-title{
+	.top-title;
+	span{
+		&:first-child{
+			background: url('/images/mediacenter/最新项目.png') no-repeat !important;
+			margin-top: 10px !important;
+		}
+	}
+}
+.news-title{
+	.top-title;
+	span{
+		&:first-child{
+			background: url('images/mediacenter/新闻动态.png') no-repeat !important;
+			width: 23px !important;
+			margin-top: 10px !important;
+		}
+	}
+}
+
+.download-title{
+	.top-title;
+	span{
+		&:first-child{
+			background: url('images/mediacenter/资料下载.png') no-repeat !important;
+			margin-top: 10px !important;
+		}
+	}
+	a{
+		float: right;
+		color: #000;
+		margin-right: 26px;
+		font-size: 15px;
+		font-weight: 600;
+	}
+}
+
 
 .normalBtn{
 	border:1px solid @index-blue;
