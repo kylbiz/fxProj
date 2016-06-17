@@ -58,6 +58,8 @@ Template.zdev.events({
 		$('.town-list .item').eq(index).toggle('show').siblings().hide();
 
 		$('.area-list .item').hide();
+
+		$(".imgs img").hide();
 	},
 
 	// 'click .town ul li': function (e) {
