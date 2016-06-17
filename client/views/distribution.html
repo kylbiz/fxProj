@@ -16,20 +16,19 @@
 			<div class="left-list">
 				<ul class="important">
 					<li><img src="../images/重点产业.png" alt=""></li>
-					<li class="active">先进制造业</li>
+					<li id="importantIndus">先进制造业</li>
 					<li>现代服务业</li>
 				</ul>
 				<ul class="distribute">
 					<li><img src="../images/产业分布.png" alt=""></li>
-					<li>东部</li>
-					<li>中部</li>
-					<li>南部</li>
-					<li>西部</li>
+					<li id="east">东部</li>
+					<li id="middle">中部</li>
+					<li id="south">南部</li>
+					<li id="west">西部</li>
 				</ul>
 			</div>
 			<div>
-<!-- 			<div class="right-content">
-				
+			<div class="right-content making hide" id="industrialD">
 				<div class="banner">
 					<img src="../images/disbanner.png" alt="">
 				</div>
@@ -60,29 +59,11 @@
 									<img src="../images/list1.png" alt="">
 									<p>上海南郊生产性服务业园区</p>
 								</div>
-								<div class="item">
-									<img src="../images/list1.png" alt="">
-									<p>上海南郊生产性服务业园区</p>
-								</div>
-								<div class="item">
-									<img src="../images/list1.png" alt="">
-									<p>上海南郊生产性服务业园区</p>
-								</div>
-								<div class="pages">
-					                <a class="prev active" href="javascript:void(0);" jp-role="prev" jp-data="">&lt;</a>
-					                <a href="javascript:void(0);" jp-role="page" jp-data=""></a>
-					                <a class="next" href="javascript:void(0);" jp-role="next" jp-data="">&gt;</a>
-								</div>
-							</div>
-							<div class="colist">
-								
-							</div>
-							<div class="colist">
 								
 							</div>
 						</div>
 					</div>
-					<div class="box middle">
+					<!-- <div class="box middle">
 						<div class="top">
 							<h2>中部</h2>
 							<span>生物医药、汽车配件、智能电网产业和总部集聚区</span>
@@ -124,8 +105,8 @@
 								
 							</div>
 						</div>
-					</div>
-					<div class="box south">
+					</div> -->
+					<!-- <div class="box south">
 						<div class="top">
 							<h2>南部</h2>
 							<span>生物医药、汽车配件、智能电网产业和总部集聚区</span>
@@ -143,8 +124,8 @@
 								<p>上海南郊生产性服务业园区</p>
 							</div>
 						</div>
-					</div>
-					<div class="box west">
+					</div> -->
+					<!-- <div class="box west">
 						<div class="top">
 							<h2>西部</h2>
 							<span>生物医药、汽车配件、智能电网产业和总部集聚区</span>
@@ -186,12 +167,12 @@
 								
 							</div>
 						</div>
-					</div>
+					</div> -->
+					{{> jqPaginator }}
 				</div>
-			</div> -->
+			</div>
 
-			<div class="right-content making">
-				
+			<div class="right-content making hide" id="importantContent">
 				<div class="slider">
 					<div class="arrow-left"></div>
 					<div class="arrow-right"></div>

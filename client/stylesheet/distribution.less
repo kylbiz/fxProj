@@ -25,13 +25,15 @@
 		.left-list {
 			width: 270px;
 			float: left;
-			background: @helper-color;
 			ul {
 				padding: 0;
 				margin: 0;
 				border: 1px solid #e6e6e6;
+				background: @helper-color;
+				&:last-child{
+					margin-top: 55px;
+				}
 				li {
-					
 					cursor: pointer;
 					height: 50px;
 					line-height: 50px;
@@ -59,6 +61,7 @@
 			float: right;
 			// border: 1px solid #e6e6e6;
 			.fourboxs {
+				background-color: @helper-color;
 				.box {
 					font-weight: bold;
 					background: @helper-color;
@@ -66,6 +69,9 @@
 						padding: 25px;
 						padding-left: 15px;
 						// border: 2px solid #e6e6e6;
+						span{
+							font-weight: 100;
+						}
 						h2 {
 							font-weight: bold;
 							color: @index-blue;
@@ -78,13 +84,21 @@
 							height: 100%;
 							margin: 0;
 							padding: 0;
+							border-top:1px solid @border-bottom;
 							li {
 								float: left;
-								width: 33%;
+								width: 33.334%;
 								height: 100%;
 								text-align: center;
 								line-height: 55px;
 								cursor: pointer;
+								border-right: 1px solid @border-bottom;
+								&:last-child{
+									border-right-width: 0;
+								}
+								&:hover{
+									border:1px solid @index-blue; 
+								}
 							}
 						}
 					}
@@ -94,6 +108,9 @@
 							padding-left: 15px;
 							overflow: hidden;
 							border-top: 2px solid #e6e6e6;
+							&:last-child{
+								border-bottom: 2px solid #e6e6e6;								
+							}
 							img {
 								float: left;
 							}
@@ -284,4 +301,11 @@
 		bottom: .3%;
 		background: url(images/advantages/qr-code.png);
 	}
+}
+
+.show{
+	display: block;
+}
+.hide{
+	display: none;
 }
