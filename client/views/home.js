@@ -55,20 +55,20 @@ Template.home.onRendered(function() {
 
 	});
 
-	//新闻滚动条
-	$(document).ready(function() {
+	// //新闻滚动条
+	// $(document).ready(function() {
 
-		setInterval(function () {
-			console.log(1)
-			$(".news-slider").find("ul:first").animate({
-				marginTop: "-60px"
-			},500,function() {
-				$(this).css({marginTop: "0px"}).find("li:first").appendTo(this);
-			});
+	// 	setInterval(function () {
+	// 		console.log(1)
+	// 		$(".news-slider").find("ul:first").animate({
+	// 			marginTop: "-60px"
+	// 		},500,function() {
+	// 			$(this).css({marginTop: "0px"}).find("li:first").appendTo(this);
+	// 		});
 
-		},4000);
+	// 	},4000);
 
-	});
+	// });
 	
 })
 

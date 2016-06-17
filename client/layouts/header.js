@@ -6,14 +6,22 @@ Template.header.onRendered(function() {
 		$("li.nav1").each(function() {
 			$(this).hover(
 				function() {
-					$(this).find("ul:eq(0)").show();
-					$(this).find("p").css('color',"#11719c")
-					if ($(this).attr("name") =='home') return ;
+					
+					$(this).find("p").css('color',"#11719c");
+
+					var index = $(".nav1").index($(this));
+
+					$(".second-nav").show("slow");
+
+					$(".sec-nav").eq(index-1).show().siblings().hide();
+
 				},
 				function() {
-					$(this).find("ul:eq(0)").hide();
+					// $(this).find("ul:eq(0)").hide();
 					$(this).find("p:first-child").css('color',"#666666");
 					$(this).find("p.en").css('color',"#999999");
+					$(".second-nav").hide();
+
 				}
 			)
 		})
