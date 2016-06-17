@@ -178,7 +178,7 @@
 				width: 665px;
 				float: left;
 				.map {
-					margin-bottom: 10px;
+					// margin-bottom: 10px;
 					background: @helper-color;
 					#mapcontainer {
 						width: 100%;
@@ -277,14 +277,16 @@
 				}
 				.case-list {
 					background: @helper-color;
-					height: 803px;
+					height: 963px;
 					padding: 20px 30px;
 					padding-right: 0px;
 					position: relative;
 					.case {
 						width: 30%;
+						height: 190px;
 						float: left;
 						margin-right: 20px;
+						margin-top: 70px;
 						margin-bottom: 30px;
 						position: relative;
 						img {
@@ -353,12 +355,6 @@
 					background: @helper-color;
 					// padding-bottom: 30px;
 					text-align: center;
-					button{
-						background-color: @index-blue;
-						margin: 10px 5px;
-						padding: 15px 10px;
-						color:#fff;
-					}
 					.item-box{
 						padding-top: 6px;
 						.item {
@@ -383,6 +379,43 @@
 							}
 
 						}
+					}
+					.list-content{
+						height: 425px;
+						padding: 6px 2px;
+						.blue{
+							background-color: @index-blue !important;
+							color: @helper-color !important;
+						}
+						.list-case{
+							float: left;
+							border:1px solid @index-blue;
+							background-color: @helper-color;
+							color:@index-blue;
+							width: 29.575%;
+						    height: 85px;
+						    margin: 9px 5px;
+						    >div{
+						    	width: inherit;
+						    	height: 85px;
+						    	display: table-cell;
+						    	vertical-align: middle;
+						    	img{
+						    		margin-bottom: 10px;
+						    	}
+						    }
+						    p{
+						    	text-align: center;
+						    	font-size: 12px;
+						    	margin: 0;
+						    }
+						}
+					}
+					button{
+						background-color: @index-blue;
+						margin: 10px 5px;
+						padding: 15px 10px;
+						color:#fff;
 					}
 					ul{
 						margin: auto;
@@ -729,6 +762,7 @@
 .inputType{
 	float: right;
 	position: relative;
+	margin-right: 18px;
 	input{
 		border: 2px solid #e8e8e9;
 	}
@@ -892,6 +926,36 @@
 		font-weight: 600;
 	}
 }
+
+
+.important-title{
+	.top-title;
+	span{
+		&:first-child{
+			background: url('images/重点产业.png') no-repeat !important;
+			margin-top: 10px !important;
+		}
+	}
+	a{
+		float: right;
+		color: #000;
+		margin-right: 26px;
+		font-size: 15px;
+		font-weight: 600;
+	}
+}
+
+.success-title{
+	.top-title;
+	span{
+		&:first-child{
+			background: url('images/cases/sucessTitle.png') no-repeat !important;
+			margin-top: 10px !important;
+		}
+	}
+}
+
+
 
 
 .normalBtn{
