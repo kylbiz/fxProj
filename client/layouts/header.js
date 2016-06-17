@@ -9,13 +9,11 @@ Template.header.onRendered(function() {
 					$(this).find("ul:eq(0)").show();
 					$(this).find("p").css('color',"#11719c")
 					if ($(this).attr("name") =='home') return ;
-					$(".nav2-bg").show();
 				},
 				function() {
 					$(this).find("ul:eq(0)").hide();
 					$(this).find("p:first-child").css('color',"#666666");
 					$(this).find("p.en").css('color',"#999999");
-					$(".nav2-bg").hide();
 				}
 			)
 		})
