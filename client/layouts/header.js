@@ -20,11 +20,19 @@ Template.header.onRendered(function() {
 					// $(this).find("ul:eq(0)").hide();
 					$(this).find("p:first-child").css('color',"#666666");
 					$(this).find("p.en").css('color',"#999999");
-					$(".second-nav").hide();
 
 				}
 			)
 		})
+		$(".second-nav").hover(
+			function() {
+				console.log('love');
+			},
+			function() {
+				// $(this).find("ul:eq(0)").hide();
+				$(".second-nav").hide("slow");
+			}
+		)
 		
 })
 
@@ -54,5 +62,12 @@ Template.header.events({
 		var event = e || window.e;
 		var li = event.target.parentNode.parentNode.parentNode;
 		$(li).addClass("navactive").siblings().removeClass("navactive");
-	}
+	},
+	'click .sec-nav .left ul li': function (e) {
+		var target = e.target;
+		var index = $(".sec-nav .left ul li").index(target);
+		console.log(index);
+		$(target).addClass('activeNav').siblings().removeClass('activeNav');
+		// $('.')
+	},
 });	
