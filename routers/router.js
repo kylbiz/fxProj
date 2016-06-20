@@ -14,7 +14,7 @@ Router.route('/login',{
 //简介
 Router.route('/introduction',{
 	name: 'introduction'
-})
+})	
 
 
 //奉贤优势 
@@ -28,15 +28,17 @@ Router.route('/advantages',{
 // 	name: 'concessions'
 // })
 
+//政策详情
 Router.route('/concessions/detail', {
 	name: 'concessionsDetail'
 })
 
-//选择奉贤
+//区位交通
 Router.route('/select/transportation', {
 	name: 'transportation'
 })
 
+//特色聚集
 Router.route('/select/focus', {
 	name: 'focus'
 })
