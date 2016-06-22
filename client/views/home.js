@@ -8,6 +8,8 @@ Template.home.onRendered(function() {
 			ul = slideShow.find('.lists'),		//获取图片列表
 			nav = slideShow.find('.slider-nav span'),	//获取导航 span
 			moveWidth = ul.find('li').eq(1).width(),  //以单张图片的宽度作为每次移动的宽度
+			prev = $('#prev'),
+			next = $('#next'),
 			timer = null,  //初始化一个定时器
 			iNow = 0;
 
@@ -34,6 +36,24 @@ Template.home.onRendered(function() {
 			nav.removeClass('active');  //添加之前去除active样式，防止重复
 			me.addClass('active');
 
+		});
+
+		prev.on('click',function(e) {
+			e.preventDefault;
+			if(parseInt(ul.css('left')) === 0) ul.css('left','-4800px');
+			ul.animate ({ // 由 css 改为 animate 实现动画效果
+				'left': parseInt(ul.css('left')) + moveWidth + 'px'
+			})
+			console.log(iNow)
+		});
+
+		next.on('click',function(e) {
+			e.preventDefault;
+			if(parseInt(ul.css('left')) === -3840) ul.css('left','960px');
+			ul.animate ({ // 由 css 改为 animate 实现动画效果
+				'left': parseInt(ul.css('left')) - moveWidth + 'px'
+			})
+			console.log(iNow);
 		});
 
 		autoPlay();  //初始化的时候先调用 autoPlay
