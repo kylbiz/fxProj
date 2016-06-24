@@ -39,7 +39,6 @@ Template.concessions.events({
 	'click #upSpan2': function (event) {
 			$('#showUltext2').toggleClass('Dblock1').prev().toggleClass('spanChange');
 	}
-
 });
 Template.jqPaginator.onRendered(function () {
 	$("#jqPaginator").jqPaginator({

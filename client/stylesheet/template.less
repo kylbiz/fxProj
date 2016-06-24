@@ -96,7 +96,7 @@
 				p{
 					text-indent: 2em;
 					letter-spacing: 2px;
-					line-height: 30px;
+					line-height: 26px;
 				}
 			}
 
@@ -176,84 +176,36 @@
 			// height: 750px;
 			// margin-top: 20px;
 			overflow: hidden;
-			margin-bottom: 30px;
+			margin-bottom: 20px;
 			.left {
 				width: 665px;
 				float: left;
+				background: @helper-color;
 				.map {
 					// margin-bottom: 10px;
 					background: @helper-color;
+					// min-height: 684px;
+					.news-content{
+						width: 100%;
+						min-height: 684px;
+						padding: 0 30px;
+						padding-bottom: 50px;
+						.newsTitle{
+							padding-top: 16px;
+							padding-bottom: 16px;
+							text-align: center;
+							border-bottom: 1px solid @border-bottom;
+						}
+						.news-text{
+							font-size: 16px;
+							text-indent:2em;
+							line-height: 26px;
+						}
+					}
 					#mapcontainer {
 						width: 100%;
 						// height: 376px;
 						// padding-bottom: 20px;
-						.ul-text{
-							padding: 20px 5px;
-							border-bottom: 2px solid #e6e6e6;
-							&:last-child{
-								border-bottom-width: 0;
-							}
-							ul{
-								display: inline;
-								-webkit-padding-start: 0;
-								padding-left: 20px;
-								span{
-										display: inline-block;
-										position: absolute;
-										margin-top: 1px;
-										width: 22px;
-										height: 22px;
-										background: url(/images/dev/arrow.png) no-repeat scroll right center transparent;
-										background-position: 0 -2px;
-									}
-								li{
-									cursor: pointer;
-									display: inline-block;
-									margin-right: 10px;
-									font-size: 14px;
-									&:first-child{
-										font-size: 16px;
-									}
-									input[type=checkbox]{
-										margin-right: 5px;
-									}
-
-									// select{
-									// 	width: 22px;
-									// 	background:no-repeat;
-									// 	/*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/
-									// 	border: solid 1px white;
-									// 	/*很关键：将默认的select选择框样式清除*/
-									// 	appearance:none;
-									// 	-moz-appearance:none;
-									// 	-webkit-appearance:none;
-									// 	/*在选择框的最右侧中间显示小箭头图片*/
-									// 	background: url(/images/dev/arrow-down.png) no-repeat scroll right center transparent;
-									// 	/*为下拉小箭头留出一点位置，避免被文字覆盖*/
-									// 	padding-right: 14px;
-									// }
-									// /*清除ie的默认选择框样式清除，隐藏下拉箭头*/
-									// select::-ms-expand { display: none; }
-
-								}
-							}
-						}
-						.ul-content{
-							ul{
-								list-style:initial;
-								margin:0;
-								padding: 27px 60px;
-								padding-bottom: 0px;
-								li{
-									margin-bottom: 20px;
-									&:last-child{
-										border-bottom: 1px solid #e6e6e6;
-										padding-bottom: 10px;
-									}
-								}
-							}
-						}
-						
 					}
 					.map-title{
 						height: 50px;
@@ -319,7 +271,10 @@
 			}
 			.right {
 				width: 270px;
+				// min-height: 332px;
 				float: right;
+				// margin-bottom: 20px;
+				background-color: @helper-color;
 				.user-title{
 					height:157px;
 					border-top: 5px solid @index-blue;
@@ -423,16 +378,18 @@
 					ul{
 						margin: auto;
 						padding: 0 0;
+						padding-top: 12px;
+						padding-bottom: 16px;
 						list-style: initial;
 						list-style-position: inside;
 						font-family: @yahei;
 						li{
 							font-size: 14px;
-							padding: 10px 10px;
+							padding: 6px 16px;
+							text-align: left;
 						}
 					}
 				}
-
 				// 项目详情列表
 				.lists {
 					background: @helper-color;
@@ -459,6 +416,32 @@
 							color: @helper-color;
 						}
 				    }
+				}
+				//热门园区表
+				.right-wapper{
+					padding-left: 16px;
+					padding-right: 16px;
+					padding-top: 12px;
+					padding-bottom: 16px;
+					width: 100%;
+					.right-img{
+						img{
+							width: 100px;
+							height: 90px;
+							margin-right: 16px;
+						}
+					}
+					.right-title{
+						padding-top: 12px;
+						padding-bottom: 10px;
+						font-size: 18px;
+						color: @index-blue;
+						border-bottom: 1px solid @border-bottom;
+					}
+					p{
+						font-size: 14px;
+						letter-spacing: 2px;
+					}
 				}
 			}
 			.main-content{
@@ -591,6 +574,12 @@
 							border:1px solid #333;
 							line-height: 10px;
 							height:30px;
+						}
+						label{
+							border:1px solid #000;
+							color: #000;
+							font-size: 14px;
+							padding: 2px 6px;
 						}
 						p{
 							margin:0px;
@@ -756,7 +745,59 @@
 	}
 }
 
-
+//checkbox框
+.ul-text{
+	padding: 20px 5px;
+	border-bottom: 2px solid #e6e6e6;
+	color: #000;
+	&:last-child{
+		border-bottom-width: 0;
+	}
+	ul{
+		display: inline;
+		-webkit-padding-start: 0;
+		padding-left: 20px;
+		span{
+				display: inline-block;
+				position: absolute;
+				margin-top: 1px;
+				width: 22px;
+				height: 22px;
+				background: url(/images/dev/arrow.png) no-repeat scroll right center transparent;
+				background-position: 0 -2px;
+			}
+		li{
+			cursor: pointer;
+			display: inline-block;
+			margin-right: 10px;
+			font-size: 14px;
+			&:first-child{
+				font-size: 16px;
+			}
+			input[type=checkbox]{
+				margin-right: 5px;
+			}
+		}
+	}
+}
+//新闻列表框
+.ul-content{
+	ul{
+		list-style:initial;
+		list-style-position: inside;
+		margin:0;
+		padding: 10px 20px;
+		li{
+			font-size: 14px;
+			color: #000;
+			height: 40px;
+			&:last-child{
+				border-bottom: 1px solid #e6e6e6;
+				padding-bottom: 10px;
+			}
+		}
+	}
+}
 
 .button-change{
 	background-color: @index-blue !important;
@@ -964,6 +1005,25 @@
 		}
 	}
 }
+.hot-pointer{
+	.top-title;
+	span{
+		&:first-child{
+			background: url('images/news/hot-pointer.png') no-repeat !important;
+			margin-top: 10px !important;
+		}
+	}
+}
+.hot-park{
+	.top-title;
+	span{
+		&:first-child{
+			background: url('images/news/hot-park.png') no-repeat !important;
+			margin-top: 10px !important;
+		}
+	}
+}
+
 .normalBtn{
 	border:1px solid @index-blue;
 	color:@index-blue;

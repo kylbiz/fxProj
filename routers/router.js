@@ -16,18 +16,15 @@ Router.route('/introduction',{
 	name: 'introduction'
 })	
 
+//新闻详情
+Router.route('/news',{
+	name: 'news'
+})
 
 //奉贤优势 
 Router.route('/advantages',{
 	name: 'fxAdvantages'
 })
-
-
-//联系我们
-// Router.route('/concessions', {
-// 	name: 'concessions'
-// })
-
 //政策详情
 Router.route('/concessions/detail', {
 	name: 'concessionsDetail'
@@ -76,6 +73,10 @@ Router.route('/investGuide/zoneDetail',{
 	name: 'zoneDetail'
 })
 
+//政策查询
+Router.route('/searchPolicy',{
+	name: 'searchPolicy'
+})
 //优惠政策
 Router.route('/investGuide/concessions',{
 	name: 'concessions'
@@ -159,4 +160,3 @@ Router.route('/mediaCenter/projectDetail',{
 Router.route('/mediaCenter', {
 	name: 'mediaCenter'
 })
-
