@@ -1,45 +1,38 @@
 Template.header.onRendered(function() {
+    $("li.nav1").each(function() {
+        $(this).hover(
+            function() {
+                //nav 上停留一秒再出现二级导航
+                // timer = setTimeout(function(){
+                    $(this).find("p").css('color', "#11719c");
 
+                    var index = $(".nav1").index($(this));
 
-            // $(document).ready(function() {
+                    if ($(this).attr('name') === 'nonav') return;
 
-            $("li.nav1").each(function() {
-                $(this).hover(
-                    function() {
-                        //nav 上停留一秒再出现二级导航
-                        // timer = setTimeout(function(){
-                        $(this).find("p").css('color', "#11719c");
+                    $(".second-nav").slideDown("slow");
 
-                        var index = $(".nav1").index($(this));
+                    $(".sec-nav").eq(index - 1).show().siblings().hide();
+                },
+                function() {
+                    // $(this).find("ul:eq(0)"	).hide();
+                    // clearTimeout(timer);
+                    $(this).find("p:first-child").css('color', "#666666");
+                    $(this).find("p.en").css('color', "#999999");
 
-                        if ($(this).attr('name') === 'nonav') return;
-
-                        $(".second-nav").slideDown("slow");
-
-                        $(".sec-nav").eq(index - 1).show().siblings().hide();
-                        // },1000)
-
-                        },
-                        function() {
-                            // $(this).find("ul:eq(0)"	).hide();
-                            // clearTimeout(timer);
-                            $(this).find("p:first-child").css('color', "#666666");
-                            $(this).find("p.en").css('color', "#999999");
-
-                        }
-                        )
-                    })
-                $(".second-nav").hover(
-                    function() {
-                        console.log('love');
-                    },
-                    function() {
-                        // $(this).find("ul:eq(0)").hide();
-                        $(".second-nav").hide("slow");
-                    }
-                )
-
-            })
+                }
+            )
+    })
+    $(".second-nav").hover(
+        function() {
+            console.log('love');
+        },
+        function() {
+            // $(this).find("ul:eq(0)").hide();
+            // $(".second-nav").hide("slow");
+        }
+    )
+})
 
 
             Template.header.events({

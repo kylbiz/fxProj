@@ -10,16 +10,18 @@ Template.zdev.events({
 		$('.area-list .item').eq(index-1).toggle('show').siblings().hide();
 
 		$('.town-list .item').hide();
+
+		$('.devarea ul li').eq(index-1).css('color','red').siblings().css('color','#11719c');
 	},
 
 	'click .map span': function (e) {
-	
-
 		var btn = e.target;
 
 		var index = $(btn).attr('val');
 
 		$(btn).css('color',"red").siblings("span").css('color','#11719c');
+
+		$('.town ul li').eq(index-1).css('color','red').siblings().css('color','#11719c');
 
 		$('.town-list .item').eq(index-1).toggle('show').siblings().hide();
 

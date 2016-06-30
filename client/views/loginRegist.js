@@ -15,16 +15,15 @@ Template.loginRegist.helpers({
 
 
 Template.loginRegist.events({
-
 	//登录、注册标签切换
 	'click .tab': function (e) {
 		var tab = e.target;
 		var index = $('.tab').index(tab);
 		console.log($(tab).siblings());
 		$(tab).addClass('active').siblings().removeClass('active');
+		$(tab).find('img').removeClass('active');
 		$('.item').eq(index).show().siblings().hide();
 	},
-
 	'click .login': function(e) {
 		e.preventDefault;
 		var inputCode = $('#code').val();

@@ -1,5 +1,4 @@
 @import 'color.less';
-
 #distribution {
 	width: 960px;
 	margin: 0 auto;
@@ -14,12 +13,10 @@
 		font-size: 16px;
 		font-weight: 600;
 	}
-
 	.active {
 		color: @helper-color !important;
 		background: @index-blue;
 	}
-
 	.content {
 		overflow: hidden;
 		.left-list {
@@ -58,8 +55,7 @@
 					}
 				}
 			}
-		}	
-
+		}
 		.right-content {
 			float: right;
 			// border: 1px solid #e6e6e6;
@@ -263,15 +259,20 @@
 				}
 				.content {
 					padding: 12px 0;
+					position: relative;
+					height: 120px;
+					width: 85%;
+					margin: 0 auto;
 				}
 				ul {
 					// width: 77%;
 					height: 120px;
+					position: relative;
 					margin: 0;
 					padding: 0;
 					display: block;
 					margin: 0 auto;
-					margin-left: 31px;
+					-webkit-padding-start: 0;
 					li {
 						float: left;
 						margin: 0 10px;
@@ -284,7 +285,7 @@
 					border-top: 15px solid transparent;
     				border-bottom: 15px solid transparent;
     				position: absolute;
-    				left: 10px; 
+    				left: 9px; 
     				top: 50%;
 				}
 
@@ -295,7 +296,7 @@
 					border-top: 15px solid transparent;
 		    		border-bottom: 15px solid transparent;
 		    		position: absolute;
-    				right: 10px; 
+    				right: 17px; 
     				top: 50%;
 				}
 			}

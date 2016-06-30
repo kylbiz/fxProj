@@ -37,7 +37,6 @@ Template.home.onRendered(function() {
 			me.addClass('active');
 
 		});
-
 		prev.on('click',function(e) {
 			e.preventDefault;
 			if(parseInt(ul.css('left')) === 0) ul.css('left','-4800px');

@@ -7,7 +7,7 @@ body {
 #login-regist {
 	width: 1000px;
 	height: 600px;
-	background: url(images/login-bg.png);
+	background: url(images/login-bg.jpg);
 	margin: 0 auto;
 	margin-top: 80px;
 	margin-bottom: 70px;
@@ -24,7 +24,7 @@ body {
 		height: 100%;
 		margin: 0 auto;
 		text-align: center;
-		padding-top: 75px;
+		padding-top: 45px;
 		ul {
 			display: block;
 			text-align: center;
@@ -34,10 +34,11 @@ body {
 			color: #656565;
 			margin-top: 35px;
 			background: rgba(255, 255, 255, 0.3);
-			// margin-bottom: 30px;
+			margin-bottom: 0;
 			li {
 				float: left;
 				display: block;
+				border-bottom: 2px solid @index-blue;
 				width: 50%;
 				height: 100%;
 				line-height: 40px;
@@ -56,54 +57,96 @@ body {
 		}
 		.item {
 			clear: both;
-			input:-webkit-autofill {
-			-webkit-box-shadow: 0 0 0px 1000px white inset;
-			border: 1px solid #CCC!important;
-			height: 45px; 
-			width: 100%;
-			}
-			input.e {
+			form{
+				padding-top: 20px;
+				padding-bottom: 20px;
+				padding-left: 18px;
+				padding-right: 18px;
+				background: rgba(255, 255, 255, 0.3);
+				input:-webkit-autofill {
+				-webkit-box-shadow: 0 0 0px 1000px white inset;
+				// border: 1px solid #CCC!important;
 				height: 45px; 
 				width: 100%;
-				font-size: 14px;
-			}
-			#code ,#code3{
-				width: 62%;
-				float: left;
-			}
-			#code2,#code4 {
-				width: 38%;
-				font-family: Arial;  
-				font-style: italic;  
-				font-weight: bold;  
-				border: 0;  
-				letter-spacing: 3px;  
-				color: blue; 
-				background: #f0f0f0;
-				text-align: center;
+				}
+				input.e {
+					height: 40px; 
+					width: 100%;
+					padding-left: 16px;
+					font-size: 14px;
+					border-width: 0;
+					margin-bottom: 10px;
+					border-radius: 5px;
+				}
+				#reflash{
+					color:#fff;
+					background-color: #a8a7a7;
+					font-size: 14px;
+					padding: 9px 8px;
+					border-radius: 5px;
+				}
+				#code2{
+					width: 30%;
+					border-radius: 5px;
+					padding-left: 16px;
+					margin-bottom: 0;
+					height: 38px;
+					font-family: Arial;  
+					font-style: italic;  
+					font-weight: bold;  
+					border: 0;  
+					letter-spacing: 3px;  
+					color: blue; 
+					background: #fff;
+					text-align: center;
+				}
+				#code3{
+					width: 62%;
+					float: left;
+				}
+				#code4 {
+					width: 31%;
+					margin-left: 18px;
+					font-family: Arial;  
+					font-style: italic;  
+					font-weight: bold;  
+					border: 0;  
+					letter-spacing: 3px;  
+					color: blue; 
+					background: #fff;
+					text-align: center;
+				}
 			}
 			.tips {
-				height: 16px;
-				margin-top: 20px;
-				color: #7a7a7a;
+				margin-top: 10px;
+				text-align: left;
+				background-color: rgba(0,0,0,0.5);
+				color: #fff;
 				font-size: 13px;
+				padding: 8px 18px;
+				border-radius: 5px;
 				input,label {
-					float: left;
-					margin-right: 2px;
+					// margin-right: 2px;
 				}
 				span {
 					float: right;
 					cursor: pointer;
 				}
 			}
-			.login,.regist {
+			.loginregist{
 				clear: both;
-				width: 200px;
-  				height: 47px;
-  				background: #40adeb;
-  				font-size: 24px;
+				width: 100%;
+  				height: 40px;
+  				background-color: rgba(24,111,147,0.5);
+  				font-size: 15px;
   				color: #fff;
-  				margin-top: 25px;
+  				margin-top: 10px;
+			}
+			.login,.regist {
+				.loginregist;
+			}
+			.login{
+				letter-spacing: 3px;
 			}
 		}
 		.registitem {

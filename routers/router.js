@@ -25,6 +25,12 @@ Router.route('/news',{
 Router.route('/advantages',{
 	name: 'fxAdvantages'
 })
+Router.route('/advantages/1',{
+	name: 'fxAdvantages1'
+})
+
+
+
 //政策详情
 Router.route('/concessions/detail', {
 	name: 'concessionsDetail'

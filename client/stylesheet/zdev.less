@@ -59,6 +59,7 @@
 			border-bottom: 30px solid #706d68;
 			border-left: 25px solid transparent;
     		border-right: 25px solid transparent;
+
 		}
 
 		.small-left {
@@ -328,6 +329,7 @@
 						img {
 							float: left;
 							margin-right: 10px;
+							display: block !important;
 						}
 						h2 {
 							margin: 10px 0;
@@ -335,6 +337,7 @@
 						span {
 							color: @helper-color;
 							line-height: 24px;
+							font-weight: 100;
 						}
 						.contact {
 							clear: both;
@@ -342,10 +345,15 @@
 						}
 						.infolist {
 							padding: 10px 0;
-							span {
-								font-size: 14px;
+							.infolist-content{
+								span{
+									display: inline-block;
+									font-size: 14px;
+									&:first-child{
+										width: 53%;
+									}
+								}
 							}
-							
 						}
 						.tabss {
 							.tabs {
@@ -363,6 +371,7 @@
 							ul {
 								width: 5000px;
 								overflow: hidden;
+								margin-top: 24px;
 								li {
 									width: 105px;
 									height: 95px;
@@ -422,7 +431,10 @@
 				.item4 {
 					position: absolute;
 					left: 31%;
-					top: 37%;
+					top: -4%;
+					.big-left{
+						top:82%;
+					}
 				}
 				.item5 {
 					height: 505px;
