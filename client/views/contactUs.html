@@ -200,7 +200,6 @@
 <template name="map">
 	{{> helper}}	
 	{{> header}}
-
 	<div id="contact-us">
 		<div class="nav">
 			<a href="/">首页</a>
@@ -226,11 +225,18 @@
 					<div class="map-info">
 						<div class="bus"></div>
 						<div class="self">
-							<div class="self-route"></div>
+							<div class="self-route">
+								<div class="img1" val="suzhou"></div>
+								<div class="img2" val="jiaxing"></div>
+								<div class="img3" val="hongqiao"></div>
+								<div class="img4" val="shiqu"></div>
+								<div class="img5" val="pudong"></div>
+								<div class="img6" val="yangshan"></div>
+							</div>
 							<!-- <div class="line"></div> -->
 							<div class="all-routes">
 								<div class="title">市内  ——上海奉贤招商办</div>
-								<div class="item">
+								<div class="item" val="pudong">
 									<div class="item-title">路线1</div>
 									<div class="item-info">
 										<p>浦东国际机场 —— 上海奉贤招商办</p>
@@ -242,7 +248,7 @@
 										公里
 									</div>
 								</div>
-								<div class="item">
+								<div class="item" val="shiqu">
 									<div class="item-title">路线2</div>
 									<div class="item-info">
 										<p>市区 —— 上海奉贤招商办</p>
@@ -254,7 +260,7 @@
 										公里
 									</div>
 								</div>
-								<div class="item">
+								<div class="item" val="hongqiao">
 									<div class="item-title">路线3</div>
 									<div class="item-info">
 										<p>上海虹桥机场 —— 上海奉贤招商办</p>
@@ -269,7 +275,7 @@
 							</div>
 							<div class="all-routes">
 								<div class="title">周边  ——上海奉贤招商办</div>
-								<div class="item">
+								<div class="item" val="yangshan">
 									<div class="item-title">路线1</div>
 									<div class="item-info">
 										<p>洋山深水港 —— 上海奉贤招商办</p>
@@ -281,7 +287,7 @@
 										公里
 									</div>
 								</div>
-								<div class="item">
+								<div class="item" val="suzhou">
 									<div class="item-title">路线2</div>
 									<div class="item-info">
 										<p>苏州 —— 上海奉贤招商办</p>
@@ -293,7 +299,7 @@
 										公里
 									</div>
 								</div>
-								<div class="item">
+								<div class="item" val="jiaxing">
 									<div class="item-title">路线3</div>
 									<div class="item-info">
 										<p>嘉兴 —— 上海奉贤招商办</p>
