@@ -1,5 +1,12 @@
 Template.map.onRendered(function () {
-
+	$(window).scroll(function () {
+		var t = $('body').scrollTop();
+		if (t>=600) {
+			$('#topfade').fadeOut("slow");
+		} else {
+			$('#topfade').fadeIn("slow");
+		}
+	});
 })
 
 Template.map.events({
