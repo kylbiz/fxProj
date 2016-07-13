@@ -156,21 +156,29 @@
 			.slider {
 				border: 1px solid #e6e6e6;
 				width: 100%;
-				height: 140px;
 				background: @helper-color;
 				padding-top: 10px;
 				padding-left: 36px;
+				padding-right: 36px;
 				position: relative;
-				ul {
-					// width: 77%;
-					height: 120px;
-					margin: 0;
-					padding: 0;
-					display: block;
-					margin: 0 auto;
-					li {
-						float: left;
-						margin: 0 10px;
+				.slider-content{
+					width: 100%;
+					height: 140px;
+					background: @helper-color;
+					position: relative;
+					overflow:hidden;
+					ul {
+						width: 1200px;
+						position:relative;
+						height: 120px;
+						margin: 0;
+						padding: 0;
+						display: block;
+						margin: 0 auto;
+						li {
+							float: left;
+							margin: 0 10px;
+						}
 					}
 				}
 				.arrow-left {
@@ -285,10 +293,9 @@
 					border-top: 15px solid transparent;
     				border-bottom: 15px solid transparent;
     				position: absolute;
-    				left: 9px; 
-    				top: 50%;
+    				left: 29px; 
+    				top: 52%;
 				}
-
 				.arrow-right {
 					width: 0;
 					height: 0;
@@ -296,8 +303,8 @@
 					border-top: 15px solid transparent;
 		    		border-bottom: 15px solid transparent;
 		    		position: absolute;
-    				right: 17px; 
-    				top: 50%;
+    				right: 38px; 
+    				top: 52%;
 				}
 			}
 		}

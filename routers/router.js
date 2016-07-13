@@ -150,8 +150,6 @@ Router.route('/comparison',{
 Router.route('/indutryCluster/distribution',{
 	name: 'distribution'
 })
-
-
 //项目详情
 Router.route('/mediaCenter/projectDetail',{
 	name: 'projectDetail'

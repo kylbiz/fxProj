@@ -3,7 +3,6 @@ Template.home.onRendered(function() {
 
 	// Home slider
 	$(document).ready(function() {
-
 		var slideShow = $('.slider'),   //获取整个div
 			ul = slideShow.find('.lists'),		//获取图片列表
 			nav = slideShow.find('.slider-nav span'),	//获取导航 span

@@ -27,7 +27,7 @@ Template.header.onRendered(function() {
                     $(this).find("p.en").css('color', "#999999");
                 }
             )
-    })
+    });
     $(".second-nav").hover(
         function() {
             console.log('love');
@@ -37,7 +37,7 @@ Template.header.onRendered(function() {
             clearTimeout(hoverTimer);
             outTimer = setTimeout(function(){
                 $(that).find("ul:eq(0)").hide();
-                $(".second-nav").hide("slow");
+                $(".second-nav").slideUp("slow");
             }, outDuring);
         }
     )
