@@ -14,14 +14,14 @@ Router.route('/login',{
 //简介
 Router.route('/introduction',{
 	name: 'introduction'
-})	
+})
 
 //新闻详情
 Router.route('/news',{
 	name: 'news'
 })
 
-//奉贤优势 
+//奉贤优势
 Router.route('/advantages',{
 	name: 'fxAdvantages'
 })
@@ -138,9 +138,21 @@ Router.route('/indutryResource/buildings',{
 })
 
 //厂房详情
-Router.route('/indutryResource/plantDetail',{
-	name: 'plantDetail'
+Router.route('/indutryResource/plantDetail1',{
+	name: 'plantDetail1'
 })
+Router.route('/indutryResource/plantDetail2',{
+	name: 'plantDetail2'
+})
+Router.route('/indutryResource/plantDetail3',{
+	name: 'plantDetail3'
+})
+Router.route('/indutryResource/plantDetail4',{
+	name: 'plantDetail4'
+})
+// Router.route('/indutryResource/plantDetail5',{
+// 	name: 'plantDetail5'
+// })
 //一键对比
 Router.route('/comparison',{
 	name: 'comparison'

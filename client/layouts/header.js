@@ -24,7 +24,7 @@ Template.header.onRendered(function() {
                     // $(this).find("ul:eq(0)"	).hide();
                     // clearTimeout(timer);
                     $(this).find("p:first-child").css('color', "#666666");
-                    $(this).find("p.en").css('color', "#999999");
+                    $(this).find("p.en").css('color', "#666666");
                 }
             )
     });

@@ -1,6 +1,7 @@
 Template.home.onRendered(function() {
 
 
+
 	// Home slider
 	$(document).ready(function() {
 		var slideShow = $('.slider'),   //获取整个div
@@ -12,7 +13,7 @@ Template.home.onRendered(function() {
 			timer = null,  //初始化一个定时器
 			iNow = 0;
 
-		//	 鼠标hover 的时候停止轮播，鼠标移出的时候继续上次位置开始轮播	
+		//	 鼠标hover 的时候停止轮播，鼠标移出的时候继续上次位置开始轮播
 		slideShow.hover(function() {
 
 			clearInterval(timer);
@@ -20,7 +21,7 @@ Template.home.onRendered(function() {
 		},autoPlay);
 
 
-		nav.on('click',function() {   // 点击导航span的时候添加active样式 
+		nav.on('click',function() {   // 点击导航span的时候添加active样式
 
 			var me = $(this),
 				index = me.index()
@@ -62,7 +63,7 @@ Template.home.onRendered(function() {
 
 				iNow++;
 
-				if (iNow > nav.length -1 ) 
+				if (iNow > nav.length -1 )
 					iNow = 0;
 
 				nav.eq(iNow).trigger('click'); //trigger自动触发事件
@@ -87,7 +88,7 @@ Template.home.onRendered(function() {
 		},4000);
 
 	});
-	
+
 })
 
 

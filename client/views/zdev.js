@@ -11,10 +11,11 @@ Template.zdev.events({
 
 		$('.town-list .item').hide();
 
-		$('.devarea ul li').eq(index-1).css('color','red').siblings().css('color','#11719c');
+		$('.devarea ul .y1').eq(index-1).css('color','red').siblings().css('color','#11719c');
 	},
 
-	'click .map span': function (e) {
+	'click .map .ss': function (e) {
+
 		var btn = e.target;
 
 		var index = $(btn).attr('val');
@@ -29,7 +30,7 @@ Template.zdev.events({
 
 	},
 	// 'click .map': function (e) {
-		
+
 	// 	console.log(e.target);
 
 	// 	var btn = e.target;
@@ -43,7 +44,7 @@ Template.zdev.events({
 	// 	$('.area-list .item').hide();
 	// }
 	'click .town ul li': function (e) {
-		
+
 
 		var btn = e.target;
 
@@ -65,7 +66,7 @@ Template.zdev.events({
 	},
 
 	// 'click .town ul li': function (e) {
-		
+
 	// 	var btn = e.target;
 
 	// 	var index = $('.town ul li').index(btn);
@@ -77,12 +78,13 @@ Template.zdev.events({
 	// 	$('.area-list .item').hide();
 	// },
 
-	'click .devarea ul li': function (e) {
-		
+	'click .devarea .y1': function (e) {
+
 		var btn = e.target;
 
+		var index = $('.devarea .y1').index(btn);
 
-		var index = $('.devarea ul li').index(btn);
+		console.log(index)
 
 		$(btn).css('color',"red").siblings().css('color',"#11719c");
 
@@ -90,13 +92,13 @@ Template.zdev.events({
 
 		$('.town ul li').css('color',"#11719c");
 
-		$(".imgs img").eq(index).show().siblings().hide();
+		// $(".imgs img").eq(index).show().siblings().hide();
 
 		$('.area-list .item').eq(index).show().siblings().hide();
 
 		$('.town-list .item').hide();
 	},
-
+	//
 	// 'click .map': function() {
 	// 	$('.town-list .item').hide();
 	// 	$('.area-list .item').hide();

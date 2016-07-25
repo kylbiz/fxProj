@@ -1,6 +1,6 @@
 Template.distribution.onRendered(function () {
-	$('#industrialD').removeClass('hide');
-	$('#east').addClass('active');
+	$('#importantContent').removeClass('hide');
+	// $('#east').addClass('active');
 	// 重点产业轮播
 	var sWidth = $("#importantslider").width(); //获取焦点图的宽度（显示面积）
 	var len = $("#importantslider ul li").length; //获取焦点图个数
@@ -64,9 +64,9 @@ Template.distribution.onRendered(function () {
 	    if ($("#getinCo ul").css('left') == '0px') {
 	    	return;
 	    } else if(index == -1) {
-	    	index = len - 1; 
+	    	index = len - 1;
 	    	showPics(index);
-	    }	   
+	    }
 	});
 	//下一页按钮
 	$(".cos .arrow-right").click(function() {
@@ -94,7 +94,7 @@ Template.distribution.events({
 		$('.fourboxs .box').each(function () {
 			if ($(this).attr('data-dir') == targetId) {
 				$(this).removeClass('hide').siblings().addClass('hide');
-			} 
+			}
 		});
 		$('.jqPaginator').removeClass('hide');
 		$('.important li').removeClass('active');
