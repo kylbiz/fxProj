@@ -32,9 +32,28 @@ Router.route('/advantages/1',{
 
 
 //政策详情
-Router.route('/concessions/detail', {
-	name: 'concessionsDetail'
+Router.route('/concessions/detail/1', {
+	name: 'concessionsDetail1'
 })
+
+Router.route('/concessions/detail/2', {
+	name: 'concessionsDetail2'
+})
+
+
+Router.route('/concessions/detail/3', {
+	name: 'concessionsDetail3'
+})
+
+Router.route('/concessions/detail/4', {
+	name: 'concessionsDetail4'
+})
+
+Router.route('/concessions/detail/5', {
+	name: 'concessionsDetail5'
+})
+
+
 
 //区位交通
 Router.route('/select/transportation', {

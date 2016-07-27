@@ -84,9 +84,10 @@ Template.zdev.events({
 
 		var index = $('.devarea .y1').index(btn);
 
-		console.log(index)
+		console.log(index);
 
 		$(btn).css('color',"red").siblings().css('color',"#11719c");
+		$(btn).parent().siblings("ul").css('color',"#11719c");
 
 		$(".spans span").css('color',"#11719c");
 
