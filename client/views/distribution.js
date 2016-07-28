@@ -36,7 +36,7 @@ Template.distribution.onRendered(function() {
 		$("#importantslider ul").stop(true, false).animate({
 			"left": nowLeft
 		}, 300); //通过animate()调整ul元素滚动到计算出的position
-	}
+	} 
 	//重点产业点击滑动特效
 	$('.slider-content ul li').each(function() {
 		var that = this;

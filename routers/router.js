@@ -195,3 +195,9 @@ Router.route('/mediaCenter/projectDetail',{
 Router.route('/mediaCenter', {
 	name: 'mediaCenter'
 })
+
+//   
+
+Router.route('/userCenter', {
+	name: 'userCenter'
+})
