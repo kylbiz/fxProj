@@ -17,16 +17,20 @@ Template.fxAdvantages.events({
 		// ...
 		// var attr = $('.pictrues div').attr('class');
 		var Imgs = new Array("img7", "img1", "img2", "img3", "img4", "img5", "img6");
-		console.log(Imgs[0]);
 		var target = e.target;
 		var index = $(".pictures div").index(target);
+		console.log(index)
+		var hh = "../images/advantages/z" + index + ".png";
+		console.log(hh)
+		$("#change-title").attr('src', hh);
+		var targetClass = $(target).attr('class');
 		var newUrl = ($(target).attr("newUrl"));
 		var contentDetail = ($(target).attr("data-next"));
 		var is = ($(target).attr("is"));
 		var divcss = {
 			background: 'url(images/advantages/' + targetClass + '_click.png)'
 		};
-		var targetClass = $(target).attr('class');
+
 		$('.img7').css("cssText", "background:url(images/advantages/img7.png) no-repeat");
 		$('.img1').css("cssText", "background:url(images/advantages/img1.png) no-repeat");
 		$('.img2').css("cssText", "background:url(images/advantages/img2.png) no-repeat");

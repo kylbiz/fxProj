@@ -125,8 +125,6 @@ Router.route('/investGuide/successCases', {
 })
 
 
-//土地详情
-
 
 //产业资源
 Router.route('/indutryResource/plant', {
@@ -139,6 +137,8 @@ Router.route('/indutryResource/building', {
 	name: 'building'
 })
 
+
+//土地详情
 Router.route('/indutryResource/landDetail', {
 	name: 'landDetail'
 })

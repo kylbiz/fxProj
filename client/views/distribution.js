@@ -9,9 +9,9 @@ Template.distribution.onRendered(function() {
 	var index = 0;
 	var picTimer;
 	//上一页按钮
-	console.log(len);
 	console.log('焦点图', Lwidth);
 	$(".slider .arrow-left").click(function() {
+		console(index)
 		index -= 1;
 		if (index == -1) {
 			index = len - 5;
@@ -32,11 +32,11 @@ Template.distribution.onRendered(function() {
 	$("#importantslider ul").css("width", len * 140);
 	//显示图片函数，根据接收的index值显示相应的内容
 	function showPics1(index) { //普通切换
-		var nowLeft = -index * 130; //根据index值计算ul元素的left值
+		var nowLeft = -index * 150; //根据index值计算ul元素的left值
 		$("#importantslider ul").stop(true, false).animate({
 			"left": nowLeft
 		}, 300); //通过animate()调整ul元素滚动到计算出的position
-	} 
+	}
 	//重点产业点击滑动特效
 	$('.slider-content ul li').each(function() {
 		var that = this;
@@ -56,16 +56,16 @@ Template.distribution.onRendered(function() {
 		});
 	});
 	//入驻企业轮播
-	var sWidth = $("#getinCo").width(); //获取焦点图的宽度（显示面积）
-	var len = $("#getinCo ul li").length; //获取焦点图个数
-	var Lwidth = $("#getinCo ul li img").width();
-	var left = parseInt($("#getinCo ul").css('left'));
+	var sWidth = $(".getinCo").width(); //获取焦点图的宽度（显示面积）
+	var len = $(".getinCo ul li").length; //获取焦点图个数
+	var Lwidth = $(".getinCo ul li img").width();
+	var left = parseInt($(".getinCo ul").css('left'));
 	var index = 0;
 	var picTimer;
 	//上一页按钮
 	$(".cos .arrow-left").click(function() {
 		index -= 1;
-		if ($("#getinCo ul").css('left') == '0px') {
+		if ($(".getinCo ul").css('left') == '0px') {
 			return;
 		} else if (index == -1) {
 			index = len - 1;
@@ -82,11 +82,11 @@ Template.distribution.onRendered(function() {
 	});
 
 	//本例为左右滚动，即所有li元素都是在同一排向左浮动，所以这里需要计算出外围ul元素的宽度
-	$("#getinCo ul").css("width", len * 140);
+	$(".getinCo ul").css("width", len * 140);
 	//显示图片函数，根据接收的index值显示相应的内容
 	function showPics(index) { //普通切换
-		var nowLeft = -index * 140; //根据index值计算ul元素的left值
-		$("#getinCo ul").stop(true, false).animate({
+		var nowLeft = -index * 160; //根据index值计算ul元素的left值
+		$(".getinCo ul").stop(true, false).animate({
 			"left": nowLeft
 		}, 300); //通过animate()调整ul元素滚动到计算出的position
 	}
@@ -106,11 +106,16 @@ Template.distribution.events({
 		});
 		$('.jqPaginator').removeClass('hide');
 		$('.important li').removeClass('active');
-	},
-	'click #east': function(event) {
+		// $('#nowadaycontent').addClass('hide');
 		$('#industrialD').removeClass('hide');
 		$('#importantContent').addClass('hide');
+		$('#nowadaycontent').addClass('hide');
 	},
+	// 'click .distribute li': function(event) {
+	// 	$('#industrialD').removeClass('hide');
+	// 	$('#importantContent').addClass('hide');
+	// 	$('#nowadaycontent').addClass('hide');
+	// },
 	'click .important li': function(event) {
 		var target = event.target;
 		var val = $(target).attr('val');
@@ -124,6 +129,9 @@ Template.distribution.events({
 		})
 		$('#industrialD').addClass('hide');
 		$('.distribute li').removeClass('active');
+		$('#industrialD').addClass('hide');
+		// $('#importantContent').removeClass('hide');
+		// $('#nowadaycontent').removeClass('hide');
 	},
 	'click .slider-content ul li': function(e) {
 		var target = e.currentTarget;

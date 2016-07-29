@@ -238,6 +238,73 @@
 						}
 					}
 				}
+				.cos {
+					border: 1px solid #e6e6e6;
+					width: 100%;
+					height: 205px;
+					background: @helper-color;
+					position: relative;
+					.title {
+						p {
+							margin: 0;
+							font-size: 18px;
+							color: @index-blue;
+							padding-left: 35px;
+						}
+					}
+					.content {
+						// padding: 12px 0;
+						position: relative;
+						height: 120px;
+						width: 85%;
+						margin: 0 auto;
+						padding: 0;
+						margin-top: 15px;
+					}
+					ul {
+						width: 700px !important;
+						height: 120px;
+						position: relative;
+						margin: 0;
+						padding: 0;
+						display: block;
+						margin: 0 auto;
+						-webkit-padding-start: 0;
+						li {
+							width: 120px;
+							height: 120px;
+							float: left;
+							margin: 0 10px;
+							a{
+								width: 120px;
+								height: 120px;
+								img {
+									// border: 1px solid #000;
+								}
+							}
+						}
+					}
+					.arrow-left {
+						width: 0;
+						height: 0;
+						border-right: 15px solid @index-gray;
+						border-top: 15px solid transparent;
+				    	border-bottom: 15px solid transparent;
+				    	position: absolute;
+				    	left: 29px;
+				    	top: 52%;
+					}
+					.arrow-right {
+						width: 0;
+						height: 0;
+						border-left: 15px solid @index-gray;
+						border-top: 15px solid transparent;
+						border-bottom: 15px solid transparent;
+						position: absolute;
+				    	right: 38px;
+				    	top: 52%;
+					}
+				}
 			}
 
 			.policy {
@@ -267,62 +334,7 @@
 				}
 			}
 
-			.cos {
-				border: 1px solid #e6e6e6;
-				width: 100%;
-				height: 205px;
-				background: @helper-color;
-				position: relative;
-				.title {
-					p {
-						margin: 0;
-						font-size: 18px;
-						color: @index-blue;
-						padding-left: 35px;
-					}
-				}
-				.content {
-					padding: 12px 0;
-					position: relative;
-					height: 120px;
-					width: 85%;
-					margin: 0 auto;
-				}
-				ul {
-					// width: 77%;
-					height: 120px;
-					position: relative;
-					margin: 0;
-					padding: 0;
-					display: block;
-					margin: 0 auto;
-					-webkit-padding-start: 0;
-					li {
-						float: left;
-						margin: 0 10px;
-					}
-				}
-				.arrow-left {
-					width: 0;
-					height: 0;
-					border-right: 15px solid @index-gray;
-					border-top: 15px solid transparent;
-    				border-bottom: 15px solid transparent;
-    				position: absolute;
-    				left: 29px;
-    				top: 52%;
-				}
-				.arrow-right {
-					width: 0;
-					height: 0;
-					border-left: 15px solid @index-gray;
-					border-top: 15px solid transparent;
-		    		border-bottom: 15px solid transparent;
-		    		position: absolute;
-    				right: 38px;
-    				top: 52%;
-				}
-			}
+
 		}
 	}
 
