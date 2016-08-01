@@ -1,12 +1,12 @@
 Template.map.onRendered(function () {
-	$(window).scroll(function () {
-		var t = $('body').scrollTop();
-		if (t>=600) {
-			$('#topfade').fadeOut("slow");
-		} else {
-			$('#topfade').fadeIn("slow");
-		}
-	});
+	// $(window).scroll(function () {
+	// 	var t = $('body').scrollTop();
+	// 	if (t>=600) {
+	// 		$('#topfade').fadeOut("slow");
+	// 	} else {
+	// 		$('#topfade').fadeIn("slow");
+	// 	}
+	// });
 })
 
 Template.map.events({
@@ -35,7 +35,6 @@ Template.map.events({
 		selfRoute.css('cssText','background:url(/images/contactus/selfdrive/'+val+'.jpg) no-repeat');
 		$('.all-routes').find('.item').removeClass('bggray');
 		target.addClass('bggray');
-		console.log(selfDiv[0]);
 		for (var i = 0; i <6; i++) {
 			if ($(selfDiv[i]).attr('val') == val) {
 				$(selfDiv[i]).css('display','none').siblings().css('display','block');
@@ -47,7 +46,14 @@ Template.map.events({
 		var target = $(e.currentTarget),
 			val = target.attr('val'),
 			selfRoute = $('.self-route');
+		var item = $('.item');
 		selfRoute.css('cssText','background:url(/images/contactus/selfdrive/'+val+'.jpg) no-repeat');
 		target.css('display','none').siblings().css('display','block');
+		for (var i = 0; i <6; i++) {
+			if ($(item[i]).attr('val') == val) {
+				$('.all-routes').find('.item').removeClass('bggray');
+				$(item[i]).addClass('bggray').siblings().removeClass('bggray');
+			}
+		}
 	}
 });
