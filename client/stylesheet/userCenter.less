@@ -1,0 +1,172 @@
+@import 'color.less';
+
+#user-center {
+	width: 960px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding-top: 20px;
+	.left {
+		width: 200px;
+		height: 387px;
+		background: @helper-color;
+		border: 1px solid gray;
+		float: left;
+		text-align: center;
+		padding-top: 20px;
+		ul {
+			padding: 0;
+			li {
+				height: 48px;
+				line-height: 48px;
+				cursor: pointer;
+				img {
+					width: 24px;
+					height: 24px;
+					vertical-align: middle;
+					margin-right: 5px;
+					margin-bottom: 2px;
+				}
+			}
+			.active {
+				border-top: 1px solid gray;
+				border-bottom: 1px solid gray;
+				border-left: 2px solid #11719c;
+			}
+		}
+		.login-out {
+			height: 48px;
+			line-height: 48px;
+			border-top: 1px solid #f0f0f0;
+			cursor: pointer;
+			img {
+				width: 24px;
+				height: 24px;
+				vertical-align: middle;
+				margin-right: 5px;
+				margin-bottom: 4px;
+			}
+		}
+
+	}
+	.right {
+		width: 735px;
+		float: right;
+		.show {
+			display: block !important;
+		}
+		.box {
+			display: none;
+			ul {
+				height: 40px;
+				padding: 0;
+				margin: 0;
+				border-bottom: 1px solid gray;
+				margin-bottom: 30px;
+				li {
+					height: 100%;
+					float: left;
+					padding: 8px 12px;
+					cursor: pointer;
+				}
+				.active {
+					border-bottom: 2px solid #11719c;
+				}
+			}
+		}
+		.content {
+			padding: 0 20px;
+			padding-top: 20px;
+			background: @helper-color;
+			border: 1px solid gray;
+			button {
+				border: 1px solid black;
+				padding: 2px 12px;
+				position: absolute;
+				right: 20px;
+				top: 35px;
+			}
+			.user-info {
+				height: 100px;
+				position: relative;
+				img {
+					position: absolute;
+					top: 24px;
+				}
+				span {
+					position: absolute;
+					top: 37px;
+					left: 60px;
+				}
+			}
+			.change-psw {
+				height: 100px;
+				position: relative;
+				border-top: 1px solid gray;
+				border-bottom: 1px solid gray;
+			}
+		}
+		.user {
+			height: 317px;
+		}
+		.form {
+			background: #fff;
+			padding: 10px 0;
+			form {
+				width: 75%;
+				margin: 0 auto;
+				display: none;
+				p {
+					margin: 30px 0;
+				}
+				span {
+					display: inline-block;
+					width: 	80px;
+				}
+				input[type="submit"] {
+					padding: 8px 75px;
+					font-size: 16px;
+					margin-left: 80px;
+				}
+			}
+			.four-label {
+				label {
+					margin-right: 58px;
+				}
+			}
+			.one-input {
+				input {
+					width: 447px;
+				}
+			}
+			.other {
+				label {
+					margin-right: 58px;
+				}
+			}
+		}
+		.three-lists {
+			background: #fff; 
+			.list {
+				display: none;
+				padding: 20px 15px;
+				.item {
+					position: relative;
+					padding: 20px 0px;
+					border-bottom: 1px solid gray;
+					span {
+						display: inline-block;
+						position: absolute;
+					}
+					.name {
+						left: 70px;
+						top: 35px;
+					}
+					.price {
+						right: 10px;
+						top: 35px;
+					}
+				}
+			}
+		}
+	}
+}

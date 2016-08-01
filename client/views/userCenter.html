@@ -1,0 +1,543 @@
+<template name="userCenter">
+	
+	{{> helper}}	
+	{{> header}}
+		<div id="user-center">
+			<div class="left">
+				<div class="user-icon">
+					<img src="../images/usercenter/big.png">
+				</div>
+				<p class="name">username</p>
+				<ul id="user-ul">
+					<li class="active"><img src="../images/usercenter/info.png">个人信息</li>
+					<li><img src="../images/usercenter/deploy.png">资源发布</li>
+					<li><img src="../images/usercenter/list.png">发布的资源</li>
+				</ul>
+				<div class="login-out">
+					<a href="/"><img src="../images/usercenter/loginout.png">退出登录</a>
+				</div>
+			</div>
+			<div class="right">
+				<div class="box userbox show">
+					<ul>
+						<li class="active">账号信息</li>
+					</ul>
+					<div class="content user">
+						<div class="user-info">
+							<img src="../images/usercenter/small.png">
+							<span>username</span>
+							<button>修改</button>
+						</div>
+						<div class="change-psw">
+							<p>帐号密码</p>
+							<p>用于保护账号信息和登录安全</p>
+							<button>修改</button>
+						</div>
+					</div>
+				</div>
+				<div class="box deploy">
+					<ul id="deploy-ul">
+						<li class="active">厂房</li>
+						<li>土地</li>
+						<li>楼宇</li>
+					</ul>
+					<div class="form">
+						<form action="" class="cf-form show">
+							<p class="four-label">
+								<span>厂房状态：</span>
+								<label for="1"><input type="radio" name="state" id="1" value="">出租</label>
+								<label for="2"><input type="radio" name="state" id="2" value="">出售</label>
+								<label for="3"><input type="radio" name="state" id="3" value="">求租</label>
+								<label for="4"><input type="radio" name="state" id="4" value="">求购</label>
+							</p>
+							<p class="one-input">
+								<span>厂房名称：</span>
+								<input type="text" />
+							</p>
+							<p class="four-label">
+								<span>物业状态：</span>
+								<label for="5"><input type="radio" name="wystate" id="5" value="">出租</label>
+								<label for="6"><input type="radio" name="wystate" id="6" value="">出售</label>
+								<label for="7"><input type="radio" name="wystate" id="7" value="">求租</label>
+								<label for="8"><input type="radio" name="wystate" id="8" value="">求购</label>
+							</p>
+							<p class="one-input">
+								<span>地址：</span>
+								<input type="text" />
+							</p>
+							<p class="two-input">
+								<span>产业导向：</span>
+								<input type="text" />
+								<span>土地面积：</span>
+								<input type="text" />
+							</p>
+							<p class="two-input">
+								<span>建筑面积：</span>
+								<input type="text" />
+								<span>产证时间：</span>
+								<input type="text" />
+							</p>
+							<p class="other">
+								<span>独立门户：</span>
+								<label for="9"><input type="radio" name="single" id="9" value="">有</label>
+								<label for="10"><input type="radio" name="single" id="10" value="">无</label>
+								<span>栋数：</span>
+								<input type="text" />
+							</p>
+							<p class="two-input">
+								<span>层数：</span>
+								<input type="text" />
+								<span>层高：</span>
+								<input type="text" />
+							</p>
+							<p class="two-input">
+								<span>厂房长度：</span>
+								<input type="text" />
+								<span>厂房宽度：</span>
+								<input type="text" />
+							</p>
+							<p class="two-input">
+								<span>办公面积：</span>
+								<input type="text" />
+								<span>建筑结构：</span>
+								<input type="text" />
+							</p>
+							<p class="other">
+								<span>产权：</span>
+								<label for="11"><input type="radio" name="cq" id="11" value="">有</label>
+								<label for="12"><input type="radio" name="cq" id="12" value="">无</label>
+								<span>配电容量：</span>
+								<input type="text" />
+							</p>
+							<p class="other">
+								<span>行车：</span>
+								<label for="13"><input type="radio" name="xc" id="13" value="">有</label>
+								<label for="14"><input type="radio" name="xc" id="14" value="">无</label>
+								<span>附带电梯：</span>
+								<label for="15"><input type="radio" name="dt" id="15" value="">有</label>
+								<label for="16"><input type="radio" name="dt" id="16" value="">无</label>
+							</p>
+							<p class="two-input">
+								<span>建成时间：</span>
+								<input type="text" />
+								<span>租金：</span>
+								<input type="text" />
+							</p>
+							<p class="one-input">
+								<span style="float:left">厂方介绍：</span>
+								<textarea name="" id="" cols="54" rows="10"></textarea>
+							</p>
+							<p>
+								<span>照片上传：</span>
+								<input type="file">
+							</p>
+							<p class="one-input">
+								<span>联系人：</span>
+								<input type="text">
+							</p>
+							<p class="one-input">
+								<span>联系方式：</span>
+								<input type="text">
+							</p>
+							<input type="submit" value="提交">
+						</form>
+						<form action="" class="td-form">
+							<p class="four-label">
+								<span>土地状态：</span>
+								<label for=""><input type="radio" name="state" value="">出租</label>
+								<label for=""><input type="radio" name="state" value="">出售</label>
+								<label for=""><input type="radio" name="state" value="">求租</label>
+								<label for=""><input type="radio" name="state" value="">求购</label>
+							</p>
+							<p class="one-input">
+								<span>土地名称：</span>
+								<input type="text" />
+							</p>
+							<p class="four-label">
+								<span>物业状态：</span>
+								<label for=""><input type="radio" name="wystate" value="">出租</label>
+								<label for=""><input type="radio" name="wystate" value="">出售</label>
+								<label for=""><input type="radio" name="wystate" value="">求租</label>
+								<label for=""><input type="radio" name="wystate" value="">求购</label>
+							</p>
+							<p class="one-input">
+								<span>地址：</span>
+								<input type="text" />
+							</p>
+							<p class="two-input">
+								<span>产业导向：</span>
+								<input type="text" />
+								<span>土地面积：</span>
+								<input type="text" />
+							</p>
+							<p class="two-input">
+								<span>建筑面积：</span>
+								<input type="text" />
+								<span>产证时间：</span>
+								<input type="text" />
+							</p>
+							<p class="other">
+								<span>独立门户：</span>
+								<label for=""><input type="radio" name="single" value="">有</label>
+								<label for=""><input type="radio" name="single" value="">无</label>
+								<span>栋数：</span>
+								<input type="text" />
+							</p>
+							<p class="two-input">
+								<span>层数：</span>
+								<input type="text" />
+								<span>层高：</span>
+								<input type="text" />
+							</p>
+							<p class="two-input">
+								<span>土地长度：</span>
+								<input type="text" />
+								<span>土地宽度：</span>
+								<input type="text" />
+							</p>
+							<p class="two-input">
+								<span>办公面积：</span>
+								<input type="text" />
+								<span>建筑结构：</span>
+								<input type="text" />
+							</p>
+							<p class="other">
+								<span>产权：</span>
+								<label for=""><input type="radio" name="cq" value="">有</label>
+								<label for=""><input type="radio" name="cq" value="">无</label>
+								<span>配电容量：</span>
+								<input type="text" />
+							</p>
+							<p class="other">
+								<span>行车：</span>
+								<label for=""><input type="radio" name="xc" value="">有</label>
+								<label for=""><input type="radio" name="xc" value="">无</label>
+								<span>附带电梯：</span>
+								<label for=""><input type="radio" name="dt" value="">有</label>
+								<label for=""><input type="radio" name="dt" value="">无</label>
+							</p>
+							<p class="two-input">
+								<span>建成时间：</span>
+								<input type="text" />
+								<span>租金：</span>
+								<input type="text" />
+							</p>
+							<p class="one-input">
+								<span style="float:left">土地介绍：</span>
+								<textarea name="" id="" cols="54" rows="10"></textarea>
+							</p>
+							<p>
+								<span>照片上传：</span>
+								<input type="file">
+							</p>
+							<p class="one-input">
+								<span>联系人：</span>
+								<input type="text">
+							</p>
+							<p class="one-input">
+								<span>联系方式：</span>
+								<input type="text">
+							</p>
+							<input type="submit" value="提交">
+						</form>
+						<form action="" class="ly-form">
+							<p class="four-label">
+								<span>楼宇状态：</span>
+								<label for=""><input type="radio" name="state" value="">出租</label>
+								<label for=""><input type="radio" name="state" value="">出售</label>
+								<label for=""><input type="radio" name="state" value="">求租</label>
+								<label for=""><input type="radio" name="state" value="">求购</label>
+							</p>
+							<p class="one-input">
+								<span>楼宇名称：</span>
+								<input type="text" />
+							</p>
+							<p class="four-label">
+								<span>物业状态：</span>
+								<label for=""><input type="radio" name="wystate" value="">出租</label>
+								<label for=""><input type="radio" name="wystate" value="">出售</label>
+								<label for=""><input type="radio" name="wystate" value="">求租</label>
+								<label for=""><input type="radio" name="wystate" value="">求购</label>
+							</p>
+							<p class="one-input">
+								<span>地址：</span>
+								<input type="text" />
+							</p>
+							<p class="two-input">
+								<span>产业导向：</span>
+								<input type="text" />
+								<span>土地面积：</span>
+								<input type="text" />
+							</p>
+							<p class="two-input">
+								<span>建筑面积：</span>
+								<input type="text" />
+								<span>产证时间：</span>
+								<input type="text" />
+							</p>
+							<p class="other">
+								<span>独立门户：</span>
+								<label for=""><input type="radio" name="single" value="">有</label>
+								<label for=""><input type="radio" name="single" value="">无</label>
+								<span>栋数：</span>
+								<input type="text" />
+							</p>
+							<p class="two-input">
+								<span>层数：</span>
+								<input type="text" />
+								<span>层高：</span>
+								<input type="text" />
+							</p>
+							<p class="two-input">
+								<span>楼宇长度：</span>
+								<input type="text" />
+								<span>楼宇宽度：</span>
+								<input type="text" />
+							</p>
+							<p class="two-input">
+								<span>办公面积：</span>
+								<input type="text" />
+								<span>建筑结构：</span>
+								<input type="text" />
+							</p>
+							<p class="other">
+								<span>产权：</span>
+								<label for=""><input type="radio" name="cq" value="">有</label>
+								<label for=""><input type="radio" name="cq" value="">无</label>
+								<span>配电容量：</span>
+								<input type="text" />
+							</p>
+							<p class="other">
+								<span>行车：</span>
+								<label for=""><input type="radio" name="xc" value="">有</label>
+								<label for=""><input type="radio" name="xc" value="">无</label>
+								<span>附带电梯：</span>
+								<label for=""><input type="radio" name="dt" value="">有</label>
+								<label for=""><input type="radio" name="dt" value="">无</label>
+							</p>
+							<p class="two-input">
+								<span>建成时间：</span>
+								<input type="text" />
+								<span>租金：</span>
+								<input type="text" />
+							</p>
+							<p class="one-input">
+								<span style="float:left">楼宇介绍：</span>
+								<textarea name="" id="" cols="54" rows="10"></textarea>
+							</p>
+							<p>
+								<span>照片上传：</span>
+								<input type="file">
+							</p>
+							<p class="one-input">
+								<span>联系人：</span>
+								<input type="text">
+							</p>
+							<p class="one-input">
+								<span>联系方式：</span>
+								<input type="text">
+							</p>
+							<input type="submit" value="提交">
+						</form>
+					</div>
+				</div>
+				<div class="box lists">
+					<ul id="lists-ul">
+						<li class="active">厂房</li>
+						<li>土地</li>
+						<li>楼宇</li>
+					</ul>
+					<div class="three-lists">
+						<div class="list show">
+							<div class="item">
+								<img src="../images/usercenter/small.png" alt="">
+								<span class="name">大叶公路8828号</span>		
+								<span class="price">0.6/m<sup>2</sup>/天</span>		
+							</div>
+							<div class="item">
+								<img src="../images/usercenter/small.png" alt="">
+								<span class="name">大叶公路8828号</span>		
+								<span class="price">0.6/m<sup>2</sup>/天</span>		
+							</div>
+							<div class="item">
+								<img src="../images/usercenter/small.png" alt="">
+								<span class="name">大叶公路8828号</span>		
+								<span class="price">0.6/m<sup>2</sup>/天</span>		
+							</div>
+							<div class="item">
+								<img src="../images/usercenter/small.png" alt="">
+								<span class="name">大叶公路8828号</span>		
+								<span class="price">0.6/m<sup>2</sup>/天</span>		
+							</div>
+							<div class="item">
+								<img src="../images/usercenter/small.png" alt="">
+								<span class="name">大叶公路8828号</span>		
+								<span class="price">0.6/m<sup>2</sup>/天</span>		
+							</div>
+							<div class="item">
+								<img src="../images/usercenter/small.png" alt="">
+								<span class="name">大叶公路8828号</span>		
+								<span class="price">0.6/m<sup>2</sup>/天</span>		
+							</div>
+							<div class="item">
+								<img src="../images/usercenter/small.png" alt="">
+								<span class="name">大叶公路8828号</span>		
+								<span class="price">0.6/m<sup>2</sup>/天</span>		
+							</div>
+							<div class="item">
+								<img src="../images/usercenter/small.png" alt="">
+								<span class="name">大叶公路8828号</span>		
+								<span class="price">0.6/m<sup>2</sup>/天</span>		
+							</div>
+							<div class="item">
+								<img src="../images/usercenter/small.png" alt="">
+								<span class="name">大叶公路8828号</span>		
+								<span class="price">0.6/m<sup>2</sup>/天</span>		
+							</div>
+							<div class="item">
+								<img src="../images/usercenter/small.png" alt="">
+								<span class="name">大叶公路8828号</span>		
+								<span class="price">0.6/m<sup>2</sup>/天</span>		
+							</div>
+							{{> jqPaginator}}
+						</div>
+						<div class="list">
+							<div class="item">
+								<img src="../images/usercenter/small.png" alt="">
+								<span class="name">大叶公路88288号</span>		
+								<span class="price">0.6/m<sup>2</sup>/天</span>		
+							</div>
+							<div class="item">
+								<img src="../images/usercenter/small.png" alt="">
+								<span class="name">大叶公路88288号</span>		
+								<span class="price">0.6/m<sup>2</sup>/天</span>		
+							</div>
+							<div class="item">
+								<img src="../images/usercenter/small.png" alt="">
+								<span class="name">大叶公路88288号</span>		
+								<span class="price">0.6/m<sup>2</sup>/天</span>		
+							</div>
+							<div class="item">
+								<img src="../images/usercenter/small.png" alt="">
+								<span class="name">大叶公路88288号</span>		
+								<span class="price">0.6/m<sup>2</sup>/天</span>		
+							</div>
+							<div class="item">
+								<img src="../images/usercenter/small.png" alt="">
+								<span class="name">大叶公路8828号</span>		
+								<span class="price">0.6/m<sup>2</sup>/天</span>		
+							</div>
+							<div class="item">
+								<img src="../images/usercenter/small.png" alt="">
+								<span class="name">大叶公路8828号</span>		
+								<span class="price">0.6/m<sup>2</sup>/天</span>		
+							</div>
+							<div class="item">
+								<img src="../images/usercenter/small.png" alt="">
+								<span class="name">大叶公路8828号</span>		
+								<span class="price">0.6/m<sup>2</sup>/天</span>		
+							</div>
+							<div class="item">
+								<img src="../images/usercenter/small.png" alt="">
+								<span class="name">大叶公路8828号</span>		
+								<span class="price">0.6/m<sup>2</sup>/天</span>		
+							</div>
+							<div class="item">
+								<img src="../images/usercenter/small.png" alt="">
+								<span class="name">大叶公路8828号</span>		
+								<span class="price">0.6/m<sup>2</sup>/天</span>		
+							</div>
+							<div class="item">
+								<img src="../images/usercenter/small.png" alt="">
+								<span class="name">大叶公路8828号</span>		
+								<span class="price">0.6/m<sup>2</sup>/天</span>		
+							</div>
+							{{> jqPaginator}}
+						</div>
+						<div class="list">
+							<div class="item">
+								<img src="../images/usercenter/small.png" alt="">
+								<span class="name">大叶公路8828888号</span>		
+								<span class="price">0.6/m<sup>2</sup>/天</span>		
+							</div>
+							<div class="item">
+								<img src="../images/usercenter/small.png" alt="">
+								<span class="name">大叶公路8828888号</span>		
+								<span class="price">0.6/m<sup>2</sup>/天</span>		
+							</div>
+							<div class="item">
+								<img src="../images/usercenter/small.png" alt="">
+								<span class="name">大叶公路8828888号</span>		
+								<span class="price">0.6/m<sup>2</sup>/天</span>		
+							</div>
+							<div class="item">
+								<img src="../images/usercenter/small.png" alt="">
+								<span class="name">大叶公路8828号</span>		
+								<span class="price">0.6/m<sup>2</sup>/天</span>		
+							</div>
+							<div class="item">
+								<img src="../images/usercenter/small.png" alt="">
+								<span class="name">大叶公路8828号</span>		
+								<span class="price">0.6/m<sup>2</sup>/天</span>		
+							</div>
+							<div class="item">
+								<img src="../images/usercenter/small.png" alt="">
+								<span class="name">大叶公路8828号</span>		
+								<span class="price">0.6/m<sup>2</sup>/天</span>		
+							</div>
+							<div class="item">
+								<img src="../images/usercenter/small.png" alt="">
+								<span class="name">大叶公路8828号</span>		
+								<span class="price">0.6/m<sup>2</sup>/天</span>		
+							</div>
+							<div class="item">
+								<img src="../images/usercenter/small.png" alt="">
+								<span class="name">大叶公路8828号</span>		
+								<span class="price">0.6/m<sup>2</sup>/天</span>		
+							</div>
+							<div class="item">
+								<img src="../images/usercenter/small.png" alt="">
+								<span class="name">大叶公路8828号</span>		
+								<span class="price">0.6/m<sup>2</sup>/天</span>		
+							</div>
+							<div class="item">
+								<img src="../images/usercenter/small.png" alt="">
+								<span class="name">大叶公路8828号</span>		
+								<span class="price">0.6/m<sup>2</sup>/天</span>		
+							</div>
+							{{> jqPaginator}}
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	{{> footer}}
+
+	<script>
+		$(function() {
+			$("#deploy-ul li").click(function(e) {
+				var target = e.target;
+				var index = $("#deploy-ul li").index(target);
+				console.log(index)
+				$(this).addClass("active").siblings().removeClass("active");
+				$(".form form").eq(index).addClass("show").siblings().removeClass("show");
+			})
+
+			$("#user-ul li").click(function(e) {
+				var target = e.target;
+				var index = $("#user-ul li").index(target);
+				$(this).addClass("active").siblings().removeClass("active");
+				$(".right .box").eq(index).addClass("show").siblings().removeClass("show");
+			})
+
+			$("#lists-ul li").click(function(e) {
+				var target = e.target;
+				var index = $("#lists-ul li").index(target);
+				$(this).addClass("active").siblings().removeClass("active");
+				$(".three-lists .list").eq(index).addClass("show").siblings().removeClass("show");
+			})
+		})
+	</script>
+
+</template>
