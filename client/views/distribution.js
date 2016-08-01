@@ -58,11 +58,14 @@ Template.distribution.onRendered(function() {
 	//入驻企业轮播
 	var sWidth = $(".getinCo").width(); //获取焦点图的宽度（显示面积）
 	var len = $(".getinCo ul li").length; //获取焦点图个数
-	var Lwidth = $(".getinCo ul li img").width();
+	// var Lwidth = $(".getinCo ul li img").width();
+	var Lwidth = 120;
 	var left = parseInt($(".getinCo ul").css('left'));
 	var index = 0;
 	var picTimer;
-	//上一页按钮
+
+	console.log(len, left, Lwidth)
+		//上一页按钮
 	$(".cos .arrow-left").click(function() {
 		index -= 1;
 		if ($(".getinCo ul").css('left') == '0px') {

@@ -119,7 +119,7 @@ Router.route('/investGuide/zdev', {
 
 //成功案例
 Router.route('/investGuide/successCases', {
-	name: 'successCases'
+			name: 'successCases'
 })
 
 
