@@ -1,4 +1,3 @@
-
 //公司首页
 Router.route('/' , {
 	name: 'home'
@@ -9,8 +8,6 @@ Router.route('/' , {
 Router.route('/login',{
 	name: 'loginRegist'
 })
-
-
 //简介
 Router.route('/introduction',{
 	name: 'introduction'

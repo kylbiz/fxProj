@@ -67,27 +67,4 @@ Template.header.events({
         var target = e.currentTarget;
         $(target).addClass('activeNav').siblings().removeClass('activeNav');
     },
-    // 'click .nav .nav1': function(e) {
-    // 	// var li = e.target.parentNode.parentNode.parentNode;
-    // 	// var li2 = e.target.parents();
-    // 	var event = e || window.e;
-    // 	var li = event.currentTarget;
-    // 	console.log(li)
-    // 	$(li).addClass("navactive").siblings().removeClass("navactive");
-    // 	// $(li).find("a").css('color',"#11719c");
-    // 	// return false;
-    // },
-    // 'click .nav1 ul li': function(e) {
-    // 	var event = e || window.e;
-    // 	var li = event.target.parentNode.parentNode.parentNode;
-    // 	$(li).addClass("navactive").siblings().removeClass("navactive");
-    // },
-    // 'click .sec-nav .left ul li': function(e) {
-    //     var target = e.target;
-    //     var index = $(".sec-nav .left ul li").index(target);
-    //     console.log(index);
-    //     $(target).addClass('activeNav').siblings().removeClass('activeNav');
-    //     $('.nav-content').eq(index).show().siblings().hide();
-    //     // $('.')
-    // },
 });

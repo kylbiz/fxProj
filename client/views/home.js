@@ -1,7 +1,4 @@
 Template.home.onRendered(function() {
-
-
-
 	// Home slider
 	$(document).ready(function() {
 		var slideShow = $('.slider'),   //获取整个div
@@ -15,9 +12,7 @@ Template.home.onRendered(function() {
 
 		//	 鼠标hover 的时候停止轮播，鼠标移出的时候继续上次位置开始轮播
 		slideShow.hover(function() {
-
 			clearInterval(timer);
-
 		},autoPlay);
 
 
@@ -88,13 +83,11 @@ Template.home.onRendered(function() {
 		},4000);
 
 	});
-
 })
 
 
 
 Template.home.events({
-
 	'mouseover .tab': function (e) {
 		var tab = e.target;
 		var index = $('.tab').index(tab);
